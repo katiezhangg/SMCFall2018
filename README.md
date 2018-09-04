@@ -1,2 +1,2 @@
-# SMCFall2018
+## SMCFall2018
 SMC Fall Example Repository
