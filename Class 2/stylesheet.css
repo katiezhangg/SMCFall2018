@@ -1,0 +1,47 @@
+    .red {
+        color: red;
+      }
+      
+    .yellow {
+        color: yellow;
+      }
+
+    .orange {
+        color: orange;
+      }
+
+    h2 {
+        font-family: "luckiest guy";
+
+      }
+      
+    .bg-dark {
+        background-color: blueviolet !important;
+      }
+
+      .col-md-5 {
+        width: 20vw;
+        height: 30vw;
+  
+      }
+
+      .rounded-circle {
+        object-fit: cover;
+      }
+
+      .container {
+          padding-top: 10px;
+      }
+
+
+     @media screen and (min-width: 480px) and (max-width: 767px) {
+
+        .navbar {
+          display: none;
+        }
+  
+        .nav-item {
+          display: none;
+  
+        }
+       }
