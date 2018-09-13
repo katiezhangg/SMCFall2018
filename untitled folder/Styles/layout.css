@@ -1,0 +1,10 @@
+.container {
+    background-color: olivedrab;
+
+}
+
+@media (min-width: 768px) {
+    .image-title-paragraph {
+        display: table-cell;
+    }
+}
