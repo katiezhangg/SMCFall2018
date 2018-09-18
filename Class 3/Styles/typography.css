@@ -7,3 +7,7 @@
 .nav-text-main {
     color: whitesmoke;
 }
+
+.list-item:visited {
+    color: plum;
+}
