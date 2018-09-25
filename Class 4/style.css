@@ -1,0 +1,50 @@
+h1 {
+    font-family: "Passion One";
+    display: inline;
+
+}
+
+.col-6 {
+    height: 30vw;
+    width:50vw;
+ 
+}
+
+.col-3 {
+    height: 100%;
+    width: 50%;
+
+}
+
+.image-one {
+    background-image: url(img/mountain-half.jpg);
+    background-size: cover;
+}
+
+.image-two {
+    background-image: url(img/plant-texture.jpg);
+    background-size: cover;
+}
+
+.col-4 {
+    height: 30vw;
+    margin-bottom: 10vw;
+}
+
+.subhead {
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+h3 {
+    display: inline
+}
+
+.form-check-label {
+    font-size: 1.2vw;
+}
+
+.image-three {
+    background-image: url(img/globe-photo.jpg);
+    background-size: cover;
+}

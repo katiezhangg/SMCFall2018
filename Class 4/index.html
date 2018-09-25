@@ -4,39 +4,136 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <title>Class 4: Demo</title>
   </head>
+ 
+  <header>    
+    <div class="container px-3 py-3">
+      <h1>Travel Weekly</h1>
+  </div>
+  </header>
+
   <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-      </button>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-6 image-one"></div>
+        <div class="col-6 image-two"></div>
+      </div>
+    </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+  <div class="container">
+  
+    <hr>
+
+  <h3> Want to travel?</h3>
+
+   <!-- Button trigger modal -->
+   <button type="button" class="btn btn-outline-secondary btn-sm my-2 ml-2" data-toggle="modal" data-target="#noModal">
+     No
+    </button>
+
+  <div class="modal" tabindex="-1" role="dialog" id="noModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Ok Nevermind Then</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
+    </div>
+
+  <p>
+
+  The Lake District is a hauntingly beautiful corner of our planet and easily the most 
+  scenic place in England. The landscape is simply spellbinding: shadowy ridges gilded 
+  with golden light, shimmering meadows ablaze with wild flowers, and sparkling blue 
+  lakes that reflect the whole glorious scene.
+  </p>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-4">
+      <h4 class="text-center">Sign Up for our Newsletter today! <small class="subhead">Offers that can't be missed</small></h4>
+    </div>
+    <div class="col-4 mt-2">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputName1">Name</label>
+              <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter email">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Alert me for discount opportunities</label>
+            </div>
+            
+          </form>
+
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+   Submit
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Thank you for signing up!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          We appreciate your interest in our newsletter.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+         
+    </div>
+    <div class="col-4 image-three"></div>
+  </div>
+
+
+</div>  
+
+<footer>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-brand" href="#">Travel Weekly</a>
+      </nav>
+</footer>
+
+ 
+
+
+  
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -44,9 +141,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       
-    <script>
-        $(document).ready(function(){
-            $('#exampleModal').modal({
+    <script>matchMedia
+
+          $(document).ready(function(){
+            $('#noModal').modal({
                 show:false,
                 backdrop:false
             });
