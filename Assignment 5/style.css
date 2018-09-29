@@ -1,0 +1,116 @@
+/* HEADER STYLE */
+
+.header-logo {
+    width: 17vw;
+    height: 4.5vw;
+    
+}
+
+.header {
+    display: inline-block;
+    margin-left: 41vw;
+    padding-top: 5vw;
+}
+
+/* NAV STYLE */
+
+nav {
+    margin-left: 35vw;
+    margin-top: 3vw;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.shop {
+    margin-right: 3vw;
+
+}
+.lookbook {
+    margin-right: 3vw;
+
+}
+.subscribe {
+    margin-right: 3vw;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/* CAROUSEL STYLE */
+
+img.carousel-slide {
+    width: 20vw;
+    height: 50vw;
+}
+
+.carousel-style {
+   margin-left: 8vw;
+   margin-right: 8vw;
+   margin-top: 5vw;
+
+
+}
+
+/* LOOKBOOK */
+
+.lookbook-container {
+    padding-top: 10vw;
+}
+
+.dc-one {
+    width: 30vw;
+    height: 30vw;
+}
+
+.dc-two {
+    width: 30vw;
+    height: 40vw;
+}
+
+.dc-three {
+    width: 30vw;
+    height: 43vw;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100vw;
+    height: 30vw;
+    background-color: lightcoral;
+    opacity: .8;
+    padding-top: 10vw;
+    margin-top: 3vw;
+}
+
+#footer {
+    text-align: center;
+}
+
+
+p#footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 800;
+}
+
+
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
