@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  HOME PAGE!! 
+    HOME PAGE!!!
+    HOME PAGE!!! */
+
+    .topbar {
+    width: 100vw;
+    height: 8vw;
+    display: inline-block;
+}
+
+.rightbar {
+    width: 74vw;
+    height: 100vw;
+    float: right;
+}
+/* NAVBAR */
+
+.navbar {
+    width: 25vw;
+    height: 100vw;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 2vw;
+}
+
+a {
+    color: black;
+    font-family: "Roboto Slab";
+    font-size: 2.5vw;
+}
+
+a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.jumbotron {
+    padding: 2rem 2rem;
+}
+
+.jumbo-font {
+    font-family: "roboto slab";
+}
+
+.subscribe-link {
+    font-size: 1.5vw;
+}
+
+/* CAROUSEL STUFF */
+
+.carousel-div {
+    width: 100%;
+    height: 30%;
+}
+
+img {
+    object-fit: contain;
+    width: 30vw;
+    height: 30vw;
+}
+ /* PARAGRAPH */
+
+ .paragraph-div {
+    width: 100%;
+    height: 50%;
+    margin-top: 3vw;
+}
+
+.home-p {
+    font-family: "Roboto Slab";
+    font-size: 1.5vw;
+}
+
+
+/* HAMBURGER STUFF */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* ABOUT PAGE!! 
+    ABOUT PAGE!!!
+    ABOUT PAGE!!! */
+
+.images {
+    float: right;
+    margin-right: 10vw;
+}
+
+.navbar-about {
+    width: 25vw;
+    height: 30vw;
+    display: inline-block;
+}
+
+.text-container {
+    width: 80vw;
+    height: 30vw;
+    margin-left: 8vw;
+    padding-top: 3vw;
+
+}
+
+/* SHOP PAGE
+    SHOP PAGE
+        SHOP PAGE */
+
+    
+.navbar-shop {
+    width: 15vw;
+    height: 30vw;
+    display: inline-block;
+}
+
+.shop-items {
+    padding-top: 2rem;
+    width: 70vw;
+    height: 60vw;
+    float: right;
+    margin-right: 8vw;
+}
+
+img.shop-icon {
+    width: 10vw;
+    height: 10vw;
+}
+
+/* CONTACT PAGE!!
+    CONTACT PAGE!!
+        CONTACT PAGE!! */
+
+.fillable-form {
+    float: right;
+    width: 80vw;
+    height: 45vw;
+}
+
+.form-content {
+    width: 40vw;
+    height: 30vw;
+    margin-left: 10vw;
+    
+
+}
+
+.navbar-contact {
+    width: 15vw;
+    height: 30vw;
+    display: inline-block;
+}
+
+
+/*  MEDIA BREAKPOINTS !! */
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 2rem 2rem;
+}
+
+@media (min-width: 768px) {
+
+ }
+
+@media (min-width: 992px) { 
+
+ 
+  }
+
+@media (min-width: 1200px) { 
+    .container-hamburger {
+        display: none;
+    }
+
+ }
