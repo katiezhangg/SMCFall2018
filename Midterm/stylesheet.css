@@ -47,9 +47,13 @@
 
 }
 a {
-    color: whitesmoke;
     font-family: "Roboto slab";
 }
+
+li {
+    background-color:lightgray;
+}
+
 
 
 /* Icon 1 */
@@ -89,15 +93,15 @@ a {
   }
   
   .animated-icon1 span {
-      background: #ff0000;
+      background: #800000;
   }
   
   .animated-icon3 span {
-      background: #e3f2fd;
+      background: #800000;
   }
   
   .animated-icon4 span {
-      background: #f3e5f5;
+      background: #800000;
   }
   
   .animated-icon1 span:nth-child(1) {
@@ -133,6 +137,7 @@ a {
     transform: rotate(-135deg);
   }
 
+
 /* CAROUSEL STUFF */
 
 .carousel-img {
@@ -146,57 +151,118 @@ a {
 
  /* PARAGRAPH */
 
+ .h2-paragraph {
+     font-family: "roboto slab";
+     color: #800000;
+ }
 
-
-
-
-/* HAMBURGER STUFF */
-.container {
-    display: inline-block;
-    cursor: pointer;
+.paragraph-text {
+    font-family: "Roboto"
+}
+ 
+ 
+.home-paragraph {
+    background-color: #8C5B12;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+/* JUMBOTRON */
+
+.jumbotron {
+    background-color: white;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+.h2-jumbo {
+    font-family: "roboto slab";
+  
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+.jumbo-text {
+    font-family: "roboto";
 }
 
 /* ABOUT PAGE!! 
     ABOUT PAGE!!!
     ABOUT PAGE!!! */
 
-.images {
-    float: right;
-    margin-right: 10vw;
+.abt-img1 {
+    width: 60vw;
+    height: 58vw;
 }
 
-.navbar-about {
-    width: 25vw;
-    height: 30vw;
+.abt-img2 {
+    width: 60vw;
+    height: 58vw;
+}
+
+.mobile-left {
+    float: left;
+}
+
+.mobile-right {
     display: inline-block;
+    
+
 }
 
-.text-container {
-    width: 80vw;
-    height: 30vw;
-    margin-left: 8vw;
-    padding-top: 3vw;
+#connor {
+    display: inline-block;
+    margin-left: 12vw;
+    font-family: "Roboto slab";
+    font-size: 1.1rem;
+ 
+}
 
+#tanner {
+    display: inline-block;
+    font-family: "Roboto slab";
+    font-size: 1.1rem;
+}
+
+#h1About {
+    font-family: "roboto slab";
+    text-align: center;
+    margin-bottom: 5vw;
+    font-size: 7vw;
+
+}
+
+#h3About {
+    font-family: "roboto slab";
+    text-align: left;
+    margin-bottom: 5vw;
+    margin-left: 12.5vw;
+    font-size: 5vw;
+
+}
+
+#h4About {
+    font-family: "roboto";
+}
+
+.about-paragraph {
+    font-family: "roboto";
+}
+
+.testimonial {
+    width:100vw;
+    height: 30vw;
+    background-color:#800000;
+}
+
+#testimonialQuote {
+    color: whitesmoke;
+    font-family: "roboto slab";
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 3vw;
+}
+
+.form-font {
+    font-family: "Roboto";
+}
+
+.btn-form {
+    padding: .7rem;
 }
 
 /* SHOP PAGE
@@ -204,54 +270,54 @@ a {
         SHOP PAGE */
 
     
-.navbar-shop {
-    width: 15vw;
-    height: 30vw;
-    display: inline-block;
-}
-
-.shop-items {
-    padding-top: 2rem;
-    width: 70vw;
-    height: 60vw;
-    float: right;
-    margin-right: 8vw;
-}
-
-img.shop-icon {
-    width: 10vw;
-    height: 10vw;
-}
-
 /* CONTACT PAGE!!
     CONTACT PAGE!!
         CONTACT PAGE!! */
 
-.fillable-form {
-    float: right;
-    width: 80vw;
-    height: 45vw;
+
+/* FOOTER !!
+    FOOTER !!
+        FOOTER !! */
+
+.footer {
+    background-color: #800000;
+    width: 100vw;
+    height: 55vw;
+
 }
 
-.form-content {
-    width: 40vw;
-    height: 30vw;
-    margin-left: 10vw;
+.footer-paragraph {
+    color: whitesmoke;
+    font-family: "Roboto slab";
+}
+
+.modal-header {
+    border: 0px white;
+}
+
+avisited {
+    text-decoration: none;
     
 }
 
-.navbar-contact {
-    width: 15vw;
-    height: 30vw;
-    display: inline-block;
+.footer-twitter {
+    width: 35px;
+    height: 27px;
+    padding-right: 2vw;
 }
 
+.footer-insta {
+    width: 30px;
+    height: 30px;
+}
 
 /*  MEDIA BREAKPOINTS !! */
 
 @media (min-width: 576px) {
     .jumbotron {
         padding: 2rem 2rem;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -264,8 +330,8 @@ img.shop-icon {
   }
 
 @media (min-width: 1200px) { 
-    .container-hamburger {
-        display: none;
-    }
+  
 
- }
+}
+
+

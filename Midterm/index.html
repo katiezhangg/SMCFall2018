@@ -13,16 +13,16 @@
 
     <!-- GOOGLE FONTS --> 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <title>Contock</title>
   </head>
   <body>
 
 
-
     <main>
 
-      <!--Navbar-->
+    <!--Navbar-->
 <nav class="navbar navbar-light mb-4">
 
     <!-- Navbar brand -->
@@ -87,19 +87,18 @@
                   <button id="pauseButton" type="button" class="btn btn-default btn-xs btn-pause"></button>
                 </div>
                 
-                
             </div>
           </div>
-          <div class="col-xs-12 p-4">
-            <p>
-              <h2>Choose Smart. Choose Contock.</h2>
-              Welcome to the only smart option there ever was. Ever. If you don't have a Contock Clock in your home you're an ass.
+          <div class="col-xs-12 p-4 my-4 home-paragraph">
+            <h2 class="h2-paragraph">Choose Smart. Choose Contock.</h2>
+            <p class="paragraph-text">
+              Welcome to the only smart option there ever was. Ever. If you don't have a Contock Clock in your home you're an a**.
             </p>
           </div>
           <div class="col-xs-12 px-4">
               <div class="jumbotron">
-                  <h2 class="display-6">Want more security?</h2>
-                  <p class="lead">Our sister service, Vontock, offers security camera installation services for your Contock clock so your valuables will be super secure.</p>
+                  <h2 class="display-6 h2-jumbotron">Want more security?</h2>
+                  <p class="jumbo-text">Our sister service, Vontock, offers security camera installation services for your Contock clock so your valuables will be super secure.</p>
                   <a class="btn btn-lg btn-outline-warning" href="#" role="button">Learn more</a>
                 </div>
           </div>
@@ -107,6 +106,37 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 footer">
+            <p class="footer-paragraph mt-5 ml-2">  
+              contockwhat@contock.com <br>
+              <a href="#call" data-toggle="modal" data-target="#exampleModal">634-342-3423</a>
+              <!-- MODAL -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to call?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success text-center px-5 mx-auto">Call</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </p>
+            <br>
+                    <a href="https://twitter.com/"><img src="img/twitter.png" class="footer-twitter ml-2"></a>
+                    <a href="https://www.instagram.com/kodakblack/?hl=en"><img src="img/instagram.png" class="footer-insta"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,13 +152,6 @@
     $('#carouselContock').carousel('pause');
 });
 
-    
-// This code dosen't works on Firefox and IE and works on other browesers.
-  $(document).ready(function () {
-    $('.animated-icon1,.animated-icon3,.animated-icon4').click(function () {
-     $(this).toggleClass('open');
-  });
-});
 
 // Works everywhere
   $(document).ready(function () {
