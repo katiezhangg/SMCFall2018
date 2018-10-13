@@ -18,13 +18,154 @@
     <title>Team</title>
   </head>
   <body>
-    <div class="container">
+
+     <!--Navbar-->
+  <nav class="navbar navbar-light mb-4">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand mx-auto" href="index.html"><img src="img/contock-logo.png" class="contock-logo"></a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
+        aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto text-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+         </ul>
+        <!-- Links -->
+
+      </div>
+     <!-- Collapsible content -->
+
+    </nav>
+   <!--/.Navbar-->
+
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-12">
+         <img src="img/dreamteam.png" class="dream-team">
+       </div>
+     </div>
+   </div>
+    
+   <div class="container pt-3">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 mobile-left">
+          <img src="img/man-two.jpg" class="team-img1">
+          <p id="tanner">
+            Tanner Tock
+          </p>
+        </div>
+        <div class="col-xs-12 mobile-right pt-2">
+            <p id="bigbird">
+                Big Bird
+              </p>
+            <img src="img/big-bird.png" class="team-img3">
+          </div>
+        <div class="col-xs-12 mobile-left pt-2">
+          <img src="img/man-one.jpg" class="team-img2">
+          <p id="connor">
+              Connor Con
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron team-jumbotron px-4">
+        <p class="lead">In 2015 we set off to create the sickest safe on the market. This is the best thing that we came up with.</p>
+        <hr class="my-4">
+        <p>"Hard work, privacy, swag and Sesame Street. That's what we're all about." <br>
+        - Tanner Tock, CEO</p>
+      </div>
+
+
+    <div class="table-responsive p-3">
+      <h4 class="text-center header-table">
+        Connect with us on Twitch!
+      </h4>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table-font">#</th>
+                    <th scope="col" class="table-font">Name</th>
+                    <th scope="col" class="table-font">Bro Score</th>
+                    <th scope="col" class="table-font">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">#elf</th>
+                    <td class="table-font">Tanner</td>
+                    <td class="table-font">87%</td>
+                    <td class="table-font">@tantheman</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#centaur</th>
+                    <td class="table-font">Connor</td>
+                    <td class="table-font">95%</td>
+                    <td class="table-font">@ConCon</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#bird</th>
+                    <td class="table-font">Big Bird</td>
+                    <td class="table-font">57%</td>
+                    <td class="table-font">@Squawk</td>
+                  </tr>
+                </tbody>
+
+        </table>
+      </div>
           
         </div>
       </div>
     </div>
+<!-- FOOTER -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 footer">
+              <p class="footer-paragraph mt-5 ml-2">  
+                contockwhat@contock.com <br>
+                <a href="#call" data-toggle="modal" data-target="#exampleModal">634-342-3423</a>
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to call?</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success text-center px-5 mx-auto">Call</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </p>
+              <br>
+                      <a href="https://twitter.com/"><img src="img/twitter.png" class="footer-twitter ml-2"></a>
+                      <a href="https://www.instagram.com/kodakblack/?hl=en"><img src="img/instagram.png" class="footer-insta"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
 
        
@@ -34,5 +175,24 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      // Works everywhere
+  $(document).ready(function () {
+
+  // Hide/show animation hamburger function
+    $('.navbar-toggler').on('click', function () {
+
+    // Take this line to first hamburger animations
+    $('.animated-icon1').toggleClass('open');
+
+    // Take this line to second hamburger animation
+    $('.animated-icon3').toggleClass('open');
+
+    // Take this line to third hamburger animation
+    $('.animated-icon4').toggleClass('open');
+  });
+
+});
+    </script>
   </body>
 </html>

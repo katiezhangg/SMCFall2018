@@ -167,7 +167,7 @@ li {
 
 /* JUMBOTRON */
 
-.jumbotron {
+.jumbotron-home {
     background-color: white;
 }
 
@@ -183,40 +183,6 @@ li {
 /* ABOUT PAGE!! 
     ABOUT PAGE!!!
     ABOUT PAGE!!! */
-
-.abt-img1 {
-    width: 60vw;
-    height: 58vw;
-}
-
-.abt-img2 {
-    width: 60vw;
-    height: 58vw;
-}
-
-.mobile-left {
-    float: left;
-}
-
-.mobile-right {
-    display: inline-block;
-    
-
-}
-
-#connor {
-    display: inline-block;
-    margin-left: 12vw;
-    font-family: "Roboto slab";
-    font-size: 1.1rem;
- 
-}
-
-#tanner {
-    display: inline-block;
-    font-family: "Roboto slab";
-    font-size: 1.1rem;
-}
 
 #h1About {
     font-family: "roboto slab";
@@ -265,14 +231,94 @@ li {
     padding: .7rem;
 }
 
+.img-lightbulb {
+    width: 50%;
+    margin-left: 25vw;
+}
+
+.btn-primary {
+    background-color: #ffe527;
+    border-color: #ffe527;
+    color: black;
+}
+
+/* TEAM PAGE!!
+    TEAM PAGE!!
+        TEAM PAGE!! */
+
+
+.team-img1 {
+    width: 60%;
+    
+}
+
+.team-img2 {
+    width: 60%;
+
+}
+
+.team-img3 {
+    width: 55%;
+    margin-left: 10vw;
+
+}
+
+#connor {
+    display: inline-block;
+    font-family: "Roboto slab";
+    font-size: 1.1rem;
+ 
+}
+
+#tanner {
+    display: inline-block;
+    font-family: "Roboto slab";
+    font-size: 1.1rem;
+}
+
+#bigbird {
+    display: inline-block;
+    font-family: "roboto slab";
+    font-size: 1.1rem;
+    margin-left: 15vw;
+}
+
+.dream-team {
+    width: 44%;
+    margin-left: 27vw;
+    padding-bottom: 4vw;
+
+}
+
+.mobile-left {
+    float: left;
+}
+
+.mobile-right {
+    display: inline-block;
+    background-color: lightgray;
+    
+}
+
+.team-jumbotron {
+    font-family: "roboto";
+}
+
+.header-table {
+    font-family: "Roboto slab";
+    background-color: #ffe527;
+    margin-bottom: 10vw;
+}
+
+.table-font {
+    font-family: "Roboto";
+}
+
+
+
 /* SHOP PAGE
     SHOP PAGE
         SHOP PAGE */
-
-    
-/* CONTACT PAGE!!
-    CONTACT PAGE!!
-        CONTACT PAGE!! */
 
 
 /* FOOTER !!
@@ -314,9 +360,7 @@ avisited {
 /*  MEDIA BREAKPOINTS !! */
 
 @media (min-width: 576px) {
-    .jumbotron {
-        padding: 2rem 2rem;
-}
+   
 
 }
 
