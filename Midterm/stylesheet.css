@@ -7,14 +7,19 @@
     HOME PAGE!!!
      HOME PAGE!!! */
 
+     
+     
+     /* MOBILE STUFF */
+
      img.contock-logo {
         object-fit: contain;
         width: 60vw;
     }
 
     .btn-outline-warning {
-        color: #ff0000;
-        border-color:#ff0000;
+        color: #800000;
+        border-color:#800000;
+
     }
     
     .btn-play {
@@ -46,7 +51,7 @@
     border: none;
 
 }
-a {
+a.nav-link {
     font-family: "Roboto slab";
 }
 
@@ -162,7 +167,7 @@ li {
  
  
 .home-paragraph {
-    background-color: #8C5B12;
+    background-color: lightgrey;
 }
 
 /* JUMBOTRON */
@@ -179,6 +184,12 @@ li {
 .jumbo-text {
     font-family: "roboto";
 }
+
+/* TABLET SIZE */
+
+
+
+
 
 /* ABOUT PAGE!! 
     ABOUT PAGE!!!
@@ -286,7 +297,6 @@ li {
 .dream-team {
     width: 60%;
     margin-left: 20vw;
-
 }
 
 .mobile-left {
@@ -399,9 +409,140 @@ avisited {
 
 @media (min-width: 768px) {
 
+    /* HOME */
+
+    .paragraph-text {
+        font-size: 3vw;
+    }
+
+    .jumbo-text {
+        font-size: 3vw;
+    }
+
+    .h2-jumbotron {
+        font-size: 5vw;
+        padding-bottom: 2vw;
+    }
+
+    .footer {
+      height: 30vw;
+      margin-bottom: 2vw;
+    }
+
+    .footer-twitter {
+        width: 50px;
+        height: 27px;
+        padding-right: 2vw;
+    }
+
+    .footer-insta {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-paragraph {
+        color: whitesmoke;
+        font-family: "Roboto slab";
+        font-size: 3vw;
+    }
+
+    a.nav-link {
+        font-size: 3vw;
+    }
+
+    .contock-logo {
+        padding-top: 4vw;
+    }
+
+    /* ABOUT */
+
+    .lightbulb-container {
+        padding-top: 4vw;
+        
+    }
+
+    #h3About {
+        text-align: center;
+        margin-bottom: 5vw;
+        font-size: 6vw;
+        margin-left: 0vw;
+    
+    }
+
+    .about-paragraph {
+        font-size: 3vw;
+    }
+
+    .jumbo-text {
+        margin-bottom: 2rem;
+    }
+
+    /* TEAM */
+
+    .header-table {
+        font-size: 5vw;
+        background-color: none;
+        display: inline-block;
+        margin-left: 15vw;
+        margin-bottom: 6vw;
+       
+    }
+
+    #tanner {
+        font-size: 4vw;
+    }
+
+    #connor {
+        font-size: 4vw;
+    }
+
+
+    #bigbird {
+        font-size: 4vw;
+        margin-left: 13.8vw;
+    }
+
+    .lead {
+        font-size: 1.8rem;
+    }
+
+    .quote-team {
+        font-size: 1.5rem;
+        font-family: "Roboto";
+    }
+
+    .ceo {
+        border: 0px white;
+    }
+
+    .dream-team {
+        width: 40%;
+        margin-left: 20vw;
+    }
+
+    .table-font {
+        font-size: 2.5vw;
+
+    }
+
+    #testimonialQuote {
+        font-size: 5.5vw;
+    }
+
+    .testimonial {
+        height: 15vw;
+    }
+
+    #h5About {
+        font-size: 3.5vw;
+    }
+
  }
 
 @media (min-width: 992px) { 
+    .hamburger-nav {
+        display: none;
+    }
 
  
   }
