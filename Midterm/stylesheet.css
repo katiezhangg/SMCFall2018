@@ -284,9 +284,8 @@ li {
 }
 
 .dream-team {
-    width: 44%;
-    margin-left: 27vw;
-    padding-bottom: 4vw;
+    width: 60%;
+    margin-left: 20vw;
 
 }
 
@@ -320,6 +319,40 @@ li {
     SHOP PAGE
         SHOP PAGE */
 
+    
+#shopHead {
+    display: inline-block;
+    font-family: "Roboto slab";
+    padding: 5vw;
+    margin-left: 30vw;
+    margin-right: 15vw;
+}
+
+.shopping-img {
+    width: 10%;
+    padding-bottom: 3vw;
+}
+
+.card {
+    border: 0px white;
+}
+
+.card-text {
+    font-family: "Roboto";
+}
+
+.shop-title {
+    font-family: "Roboto slab";
+    color:#800000;
+}
+
+.btn-shop {
+    padding: .5rem;
+}
+
+.modal-btn {
+    padding: .5rem;
+}
 
 /* FOOTER !!
     FOOTER !!
