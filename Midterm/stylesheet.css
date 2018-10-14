@@ -185,9 +185,13 @@ li {
     font-family: "roboto";
 }
 
-/* TABLET SIZE */
+/* LAPTOP SIZE */
 
-
+.navbar-lg {
+    width: 20vw;
+    height: 30vw;
+    
+}
 
 
 
@@ -323,6 +327,10 @@ li {
     font-family: "Roboto";
 }
 
+.card {
+    width: 18rem;
+}
+
 
 
 /* SHOP PAGE
@@ -402,14 +410,20 @@ avisited {
 
 /*  MEDIA BREAKPOINTS !! */
 
-@media (min-width: 576px) {
-   
 
+@media screen and (min-width: 320px) and (max-width: 766px) {
+
+    nav.navbar-lg {
+        display: none;
+    }
+    
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* HOME */
+
+
 
     .paragraph-text {
         font-size: 3vw;
@@ -537,19 +551,57 @@ avisited {
         font-size: 3.5vw;
     }
 
+    /* SHOP */
+
+    .card {
+        width: 30rem;
+    }
+
+    .shopping-img {
+        width: 7%;
+        padding-bottom: 3vw;
+    }
+
+    #shopHead {
+        font-size: 5.5vw;
+        padding: 5vw;
+        margin-left: 36vw;
+        margin-right: 15vw;
+    }
+
  }
 
-@media (min-width: 992px) { 
-    .hamburger-nav {
+@media screen and (min-width: 992px) { 
+    
+
+    img.contock-logo {
+        width: 30%;
+    }
+
+    /* NAVBAR */
+
+    #collapseBtn {
         display: none;
     }
+    
+    a.navbar-brand {
+        display: inline-block;
+    }
+
+
+
+
+
+    /* CAROUSEL STUFF */
+
+
+    .btn-play {
+        margin-left: 4vw;
+    }
+
+
 
  
   }
-
-@media (min-width: 1200px) { 
-  
-
-}
 
 
