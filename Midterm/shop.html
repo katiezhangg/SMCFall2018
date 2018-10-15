@@ -18,41 +18,61 @@
   <title>Shop</title>
   </head>
     <body>
-       <!--Navbar-->
-<nav class="navbar navbar-light">
+        <nav class="navbar navbar-light">
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand mx-auto" href="index.html"><img src="img/contock-logo.png" class="contock-logo"></a>
+            <!-- Navbar  -->
+            <div class="container">
+            <img src="img/contock-logo.png" class="contock-logo">
+            <nav class="navbar-lg nav-list mx-auto pt-4">
+                <ul class="nav justify-content-center ul-lg">
+                    <li class="nav-item px-3">
+                        <a href="index.html" class="a-lg">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="about.html" class="a-lg">About</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="team.html" class="a-lg">Team</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="shop.html" class="a-lg">Shop</a>
+                    </li>
+                  </ul>
+            
+              </nav>
+          
+        
+            <!-- Collapse button -->
+            <button id="collapseBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
+                aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+        
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+        
+            </div>
+            <!-- Collapsible content -->
+        
+          </nav>
+        </div>
+          <!--/.Navbar-->
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
-        aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto text-center">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-        </ul>
-        <!-- Links -->
-
-    </div>
-    <!-- Collapsible content -->
-
-  </nav>
-  <!--/.Navbar-->
 
   <!-- MAIN CONTENT -->
 
@@ -67,7 +87,7 @@
 
     <!-- MEDIA OBJECT LIST -->
 
-    <div class="container">
+    <div class="container card-1">
       <div class="row">
         <div class="col-xs-12 mx-auto py-2">
             <div class="card">
@@ -83,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container card-2">
         <div class="row">
           <div class="col-xs-12 mx-auto py-2">
               <div class="card">
@@ -91,7 +111,7 @@
                   <div class="card-body">
                       <h4 class="shop-title">Traditional</h4>
                     <p class="card-text">
-                ;    Shaped in the traditional mold, this clock's triangular fit and arched top make it perfect for universal storage.
+                    Shaped in the traditional mold, this clock's triangular fit and arched top make it perfect for universal storage.
                   </p>
                   <button type="button" class="btn btn-secondary btn-sm btn-shop" data-target="#shopModal">Add to cart</button>
                   </div>
@@ -99,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container card-3">
           <div class="row">
             <div class="col-xs-12 mx-auto py-2">
                 <div class="card">
@@ -110,7 +130,8 @@
                      </p>
                      <button type="button" class="btn btn-secondary btn-sm btn-shop"  data-toggle="modal" data-target="#shopModal">Add to cart</button>
                     
-                          <!-- Modal -->
+            <!-- Modal -->
+            
             <div class="modal fade" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -136,8 +157,122 @@
           </div>
         </div>
 
+        <div class="container media-list-laptop">
+          <div class="row">
+            <div class="col-lg">
+                <ul class="list-unstyled">
+                    <li class="media">
+                      <img class="mr-3 media-list-img" src="img/clock-one.jpg" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1 media-head">Modern</h5>
+                        <p class="media-paragraph">
+                        This clock pairs great with stainless steel sinks and tile floors. Available in three color options, silver, black, and bronze.
+                       </p>
+                    
+                      
+                       <button type="button" class="btn btn-secondary btn-sm btn-shop-lg dropdown-btn"  data-toggle="modal" data-target="#shopModalLg">
+                        Add to cart</button>
+                        
+
+                    
+          <!-- Modal -->
+         <div class="modal fade" id="shopModalLg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">Item has been added to cart.</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                   </button>
+                   
+                 </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn modal-btn px-4" data-dismiss="modal">Exit</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+           <!-- END MODAL -->
+                      </div>
+                    </li>
+                    <li class="media my-4">
+                      <img class="mr-3 media-list-img" src="img/clock-three.jpg" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1 media-head">Traditional</h5>
+                        <p class="media-paragraph">
+                        Shaped in the traditional mold, this clock's triangular fit and arched top make it perfect for universal storage.
+                      </p>
+                       
+                      <button type="button" class="btn btn-secondary btn-sm btn-shop-lg dropdown-btn"  data-toggle="modal" data-target="#shopModalLg">
+                          Add to cart</button>
+                          
+  
+                      
+            <!-- Modal -->
+           <div class="modal fade" id="shopModalLg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Item has been added to cart.</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                     
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn modal-btn px-4" data-dismiss="modal">Exit</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <!-- END MODAL -->
+                      </div>
+                    </li>
+                    <li class="media">
+                      <img class="mr-3 media-list-img" src="img/clock-four.jpg" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1 media-head">Grandfather</h5>
+                        <p class="media-paragraph">
+                        Our grandfather model holds the largest amount of storage and is ideal for maximum amount of swag.
+                        </p>
+                         
+                       <button type="button" class="btn btn-secondary btn-sm btn-shop-lg dropdown-btn"  data-toggle="modal" data-target="#shopModalLg">
+                          Add to cart</button>
+                          
+  
+                      
+            <!-- Modal -->
+           <div class="modal fade" id="shopModalLg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Item has been added to cart.</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                     
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn modal-btn px-4" data-dismiss="modal">Exit</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <!-- END MODAL -->
+
+                      </div>
+                    </li>
+                  </ul>
+
+            </div>   
+          </div>
+        </div>
+
         <footer>
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col-12 footer">
                   <p class="footer-paragraph mt-5 ml-2">  
@@ -163,7 +298,34 @@
                   <br>
                           <a href="https://twitter.com/"><img src="img/twitter.png" class="footer-twitter ml-2"></a>
                           <a href="https://www.instagram.com/kodakblack/?hl=en"><img src="img/instagram.png" class="footer-insta"></a>
-                </div>
+                          <button type="button" class="subscribe-btn-lg subscribe-btn-sm" data-toggle="modal" data-target="#bannerformModal">Subscribe</button>
+                        <!-- Modal -->
+                      <div class="modal fade" id="bannerformModal" tabindex="-1" role="dialog" aria-labelledby="bannerformLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="bannerformLabel">Subscribe to Weekly Emails</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                        <label for="exampleInputName1">Name</label>
+                                        <input type="name" class="form-control-sm" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter name">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">Email Address</label>
+                                        <input type="email" class="form-control-sm" id="exampleInputEmail1" placeholder="Email">
+                                      </div>
+                                      <button type="submit" class="btn btn-primary btn-group-sm submit-btn btn-success">Submit</button>
+                                    </form>
+                              </div>
+
+            <!-- END MODAL -->
+           
+                        </div>
               </div>
             </div>
           </footer>

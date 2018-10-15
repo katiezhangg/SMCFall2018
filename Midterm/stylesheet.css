@@ -284,8 +284,6 @@ a.a-lg:hover {
 
 .team-img3 {
     width: 55%;
-    margin-left: 10vw;
-
 }
 
 #connor {
@@ -305,12 +303,13 @@ a.a-lg:hover {
     display: inline-block;
     font-family: "roboto slab";
     font-size: 1.1rem;
-    margin-left: 15vw;
+   
 }
 
 .dream-team {
-    width: 60%;
+    width: 50%;
     margin-left: 20vw;
+    padding-top: 4vw;
 }
 
 .mobile-left {
@@ -418,6 +417,7 @@ avisited {
     height: 30px;
 }
 
+
 /*  MEDIA BREAKPOINTS !! */
 
 
@@ -426,14 +426,77 @@ avisited {
     nav.navbar-lg {
         display: none;
     }
+
+    #contocklogoLaptop {
+        display: none;
+
+    }
+
+
+    /* ABOUT */
+
+    .img-lightbulb {
+        margin-left: 23vw;
+        padding-top: 10vw;
+    }
+
+    #small-laptop {
+        display: none;
+    }
+
+    .laptop-paragraph {
+        display: none;
+    }
+
+    /* TEAM */
+
+    #nameLaptop {
+        display: none;
+    }
+    
+    .team-img3 {
+        float: right;
+    }
+
+    /* SHOP */
+
+    .media-list-laptop {
+        display: none;
+    
+    }
+
+    /* FOOTER */
+
+    .subscribe-btn-sm {
+        color: white;
+        background-color: #8C5B12;
+        border: 0px transparent;
+        padding: .5vw;
+        border-radius: 5%;
+        margin-left: 2vw;
+    }
+
+    .submit-btn {
+        padding: .5vw;
+    }
+
     
 }
+
+/* TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* HOME */
 
-
+    nav.navbar-lg {
+        display: none;
+    }
+    
+    img.contock-logo {
+        margin-left: 10vw;
+       
+    }
 
     .paragraph-text {
         font-size: 3vw;
@@ -485,11 +548,15 @@ avisited {
         
     }
 
+    .img-lightbulb {
+        width: 50%;
+    }
+
     #h3About {
         text-align: center;
         margin-bottom: 5vw;
         font-size: 6vw;
-        margin-left: 0vw;
+        margin-left: 3vw;
     
     }
 
@@ -499,6 +566,14 @@ avisited {
 
     .jumbo-text {
         margin-bottom: 2rem;
+    }
+
+    .laptop-paragraph {
+        display: none;
+    }
+
+    #small-laptop {
+        display: none;
     }
 
     /* TEAM */
@@ -542,6 +617,7 @@ avisited {
     .dream-team {
         width: 40%;
         margin-left: 20vw;
+        padding-top: 2vw;
     }
 
     .table-font {
@@ -561,6 +637,11 @@ avisited {
         font-size: 3.5vw;
     }
 
+    #nameLaptop {
+        display: none;
+    }
+    
+
     /* SHOP */
 
     .card {
@@ -579,7 +660,26 @@ avisited {
         margin-right: 15vw;
     }
 
+     /* FOOTER */
+
+     .subscribe-btn-sm {
+        color: white;
+        background-color: #8C5B12;
+        border: 0px transparent;
+        padding: .5vw;
+        border-radius: 5%;
+        margin-left: 2vw;
+    }
+
+    .submit-btn {
+        padding: .5vw;
+    }
+
  }
+
+
+
+ /* LAPTOP */
 
 @media screen and (min-width: 992px) { 
     
@@ -624,9 +724,196 @@ avisited {
 
     }
 
+    .footer-twitter {
+        width: 55px;
 
+    }
+
+    /* ABOUT */
+
+    .navbar-sm {
+        display: none;
+    }
+
+    .fillable-form {
+        padding-left: 20vw !important;
+        padding-right: 20vw !important;
+        padding-top: 4vw !important;
+        
+    }
+
+    .img-lightbulb {
+        width: 20%;
+        padding-top: 5vw !important;
+        margin-left: 33vw;
+    }
+
+    .lightbulb-container {
+        border: 2px black;
+    }
+
+    #h3About {
+        font-size: 4vw;
+        margin-left:23vw;
+        display: block;
+        font-family: "roboto";
+        font-weight: 800;
+        color: #800000;
+        margin-top: 4vw;
+    }
+
+    .about-paragraph {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #testimonialQuote {
+        font-size: 3vw;
+        padding-top: 2.5vw;
+    }
+
+    .testimonial {
+        height: 20vw;
+    }
+
+    /* TEAM */
+
+    .dream-team {
+        width: 20%;
+        margin-left: 10vw;
+    }
+
+    #tanner {
+        display: none;
+    }
+
+    #connor {
+        display: none;
+    }
+
+    #bigbird {
+        display: none;
+        margin-left: 10vw;
+    }
+
+    .dream-team {
+        width: 20%;
+        margin-left: 13vw;
+    }
+
+    .card-1 {
+        display: none;
+    }
+
+    .card-2 {
+        display: none;
+    }
+
+    .card-3 {
+        display: none;
+    }
+
+    /* Laptop Names */
+
+    #tannerLg {
+        display: inline-block;
+        padding-left: 13vw;
+        font-family: "roboto slab";
+        font-size:1.6rem;
+    }
+
+    #connorLg {
+        display: inline-block;
+        padding-left: 20vw;
+        font-family: "roboto slab";
+        font-size:1.6rem;
+
+    }
+
+    #bigbirdLg {
+        display: inline-block;
+        padding-left: 20vw;
+        font-family: "roboto slab";
+        font-size:1.6rem;
+    }
+
+    .mobile-right {
+        background-color: transparent;
+    }
+
+    .team-img1 {
+        width: 80%;
+        margin-left: 4vw;
+        padding-top: 2vw;
+        
+    }
+    
+    .team-img2 {
+        width: 80%;
+        margin-bottom: 2vw;
+    
+    }
+    
+    .team-img3 {
+        width: 75%;
+        margin-left: 3vw;
+    
+    }
+
+    /* SHOP */
+
+    .shopping-img {
+        width: 3%;
+        margin-top: 3vw;
+        margin-left: 20vw;
+    }
+
+    #shopHead {
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+        margin-left: 34vw;
+    }
+
+    .media-list-img {
+        width: 20vw;
+    }
+
+    li.media {
+        background-color:  transparent;
+    }
+    
+
+    .media-head {
+        font-family: "roboto slab";
+        font-size: 2vw;
+    }
+
+    .media-paragraph {
+        padding: 3vw;
+        font-size: 1.2vw;
+        font-family: "roboto";
+    }
+
+    .btn-shop-lg {
+        margin-left: 43vw;
+        padding: 1vw;
+    }
+
+    .subscribe-btn-lg {
+        color: white;
+        background-color: #8C5B12;
+        border: 0px transparent;
+        padding: .5vw;
+        border-radius: 5%;
+        margin-left: 2vw;
+    }
+
+    .submit-btn {
+        padding: .5vw;
+    }
+  
 
  
-  }
+}
 
 

@@ -18,42 +18,64 @@
      <title>About</title>
   </head>
   <body>
+    <main>
+        
+      <nav class="navbar navbar-light">
 
-<!--Navbar-->
-<nav class="navbar navbar-light mb-4">
+            <!-- Navbar  -->
+            <div class="container">
+            <img src="img/contock-logo.png" class="contock-logo">
+            <nav class="navbar-lg nav-list mx-auto pt-4">
+                <ul class="nav justify-content-center ul-lg">
+                    <li class="nav-item px-3">
+                        <a href="index.html" class="a-lg">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="about.html" class="a-lg">About</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="team.html" class="a-lg">Team</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="shop.html" class="a-lg">Shop</a>
+                    </li>
+                  </ul>
+            
+              </nav>
+          
+        
+            <!-- Collapse button -->
+            <button id="collapseBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
+                aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+        
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+        
+            </div>
+            <!-- Collapsible content -->
+        
+          </nav>
+        </div>
+          <!--/.Navbar-->
 
-    <!-- Navbar brand -->
-    <a class="navbar-brand mx-auto" href="index.html"><img src="img/contock-logo.png" class="contock-logo"></a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
-        aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent20">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto text-center">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-        </ul>
-        <!-- Links -->
-
-    </div>
-    <!-- Collapsible content -->
-
-  </nav>
-  <!--/.Navbar-->
+        
 
   <div class="container">
     <div class="row">
@@ -65,23 +87,33 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-12">
           <h3 id="h3About" class="pt-4">
-            "The Idea of a Lifetime"
-          </h3>
-          <p class="px-5 pb-2 about-paragraph">
-
-            In 2005, we took to creating the greatest invention ever. Bigger than fire. Bigger than the lightbulb. Bigger than you. Buy a Contock Clock today, or Get Real. 
+              "The Idea of a Lifetime"
+            </h3>
+        <div class="col-xs-12 col-md-12 col-lg-4">
+         
+          <p class="px-4 pb-2 about-paragraph">
+            In 2005, we took to creating the greatest invention ever. Bigger than fire. Bigger than the lightbulb. Buy a Contock Clock today, or Get Real. 
           </p>
         </div>
+        <div class="col-lg-4 laptop-paragraph">
+          <p class="about-paragraph">
+            What's so unique about our design is the high quality materials paired with the high quality awesomeness. Materials + Awesome = Contock.
+          </p>
+        </div>
+        <div class="col-lg-4 laptop-paragraph">
+          <p class="about-paragraph">
+            Still not sold? With every purchase of a Contock Clock, we guarantee a lifetime warranty on the clock.
+          </p>
+          </div>
       </div>
     </div>
     
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-md-12 testimonial">
             <p id="testimonialQuote">
-              My Contock Clock saved my life!
+              "My Contock Clock saved my life!"   <br> <small id="small-laptop"> - Paid actor</small>
             </p>
           </div>
         </div>
@@ -92,7 +124,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-12">
-    <div class="fillable-form px-5 py-4">
+    <div class="fillable-form px-3 py-4">
         <div class="form-content">
                     <form>
                         <h5 id="h5About">Send us a message, we promise to get back.</h5>
@@ -115,15 +147,17 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-form" class="form-font submit-btn">Submit</button>
                       </form> 
-           </div>
-    </div>
+              </div>
+          </div>
 
         </div>
       </div>
     </div>
 
+  </main>
+
     <footer>
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-md-12 footer">
               <p class="footer-paragraph mt-5 ml-2">  
@@ -149,7 +183,33 @@
               <br>
                       <a href="https://twitter.com/"><img src="img/twitter.png" class="footer-twitter ml-2"></a>
                       <a href="https://www.instagram.com/kodakblack/?hl=en"><img src="img/instagram.png" class="footer-insta"></a>
-            </div>
+                      <button type="button" class="subscribe-btn-lg subscribe-btn-sm" data-toggle="modal" data-target="#bannerformModal">Subscribe</button>
+                      <!-- Modal -->
+                    <div class="modal fade" id="bannerformModal" tabindex="-1" role="dialog" aria-labelledby="bannerformLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="bannerformLabel">Subscribe to Weekly Emails</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputName1">Name</label>
+                                      <input type="name" class="form-control-sm" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email Address</label>
+                                      <input type="email" class="form-control-sm" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-group-sm submit-btn btn-success">Submit</button>
+                                  </form>
+                            </div>
+
+          <!-- END MODAL -->
+              </div>
           </div>
         </div>
       </footer>

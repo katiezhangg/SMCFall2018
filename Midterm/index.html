@@ -21,9 +21,9 @@
 
   <main>
 
-  <nav class="navbar navbar-light mb-4">
+  <nav class="navbar navbar-light">
 
-    <!-- Navbar brand -->
+    <!-- Navbar  -->
     <div class="container">
     <img src="img/contock-logo.png" class="contock-logo">
     <nav class="navbar-lg nav-list mx-auto pt-4">
@@ -76,10 +76,6 @@
 </div>
   <!--/.Navbar-->
 
-  <nav>
-    
-  </nav>
-  
           <div class="container container-padding-lg">
             <div class="row">
                 <div class="col-xs-12 col-md-12 col-lg p-4 my-4 home-paragraph">
@@ -134,7 +130,7 @@
 
 
     <footer>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 footer">
             <p class="footer-paragraph mt-5 ml-2">  
@@ -157,10 +153,38 @@
                     </div>
                   </div>
                 </div>
-            </p>
+          
             <br>
                     <a href="https://twitter.com/"><img src="img/twitter.png" class="footer-twitter ml-2"></a>
                     <a href="https://www.instagram.com/kodakblack/?hl=en"><img src="img/instagram.png" class="footer-insta"></a>
+                    <button type="button" class="subscribe-btn-lg subscribe-btn-sm" data-toggle="modal" data-target="#bannerformModal">Subscribe</button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="bannerformModal" tabindex="-1" role="dialog" aria-labelledby="bannerformLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bannerformLabel">Subscribe to Weekly Emails</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Name</label>
+                      <input type="name" class="form-control-sm" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email Address</label>
+                      <input type="email" class="form-control-sm" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-group-sm submit-btn btn-success">Submit</button>
+                  </form>
+            </div>
+
+            <!-- END MODAL -->
+           
           </div>
         </div>
       </div>
@@ -173,17 +197,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
 
+      $('.carousel').carousel({
+      interval: 3000
+    })
+
+
       $('#playButton').click(function () {
     $('#carouselContock').carousel('cycle');
-});
+  });
     $('#pauseButton').click(function () {
     $('#carouselContock').carousel('pause');
-});
-
-$('.carousel').carousel({
-  interval: 3000
-})
-
+  });
 
 // Works everywhere
   $(document).ready(function () {
@@ -202,6 +226,7 @@ $('.carousel').carousel({
   });
 
 });
+    
     </script>
   </body>
 </html>
