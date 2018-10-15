@@ -187,12 +187,22 @@ li {
 
 /* LAPTOP SIZE */
 
-.navbar-lg {
-    width: 20vw;
-    height: 30vw;
+a.a-lg {
+    color: black;
+    font-family: "roboto slab";
+    font-size: 1.5vw;
+    text-decoration: none;
     
 }
 
+a.a-lg:hover {
+    color: whitesmoke;
+}
+
+.ul-lg {
+    list-style-type: none;
+
+}
 
 
 /* ABOUT PAGE!! 
@@ -576,7 +586,11 @@ avisited {
 
     img.contock-logo {
         width: 30%;
+        margin-left: 31vw;
+        margin-right: 40vw;
+        padding-top: 2.5vw;
     }
+    
 
     /* NAVBAR */
 
@@ -588,15 +602,26 @@ avisited {
         display: inline-block;
     }
 
-
-
-
+    .nav-item {
+        background-color: transparent;
+    }
 
     /* CAROUSEL STUFF */
 
 
     .btn-play {
         margin-left: 4vw;
+    }
+
+    .container-padding-lg {
+        padding-top: 2vw;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        height: 20vw;
+
     }
 
 
