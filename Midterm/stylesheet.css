@@ -45,6 +45,10 @@
         width: 20vw;
     }
 
+    .jumbotron-home {
+        background-color: transparent;
+    }
+
 /* NAVBAR */
 
 .navbar-light .navbar-toggler {
@@ -58,7 +62,6 @@ a.nav-link {
 li {
     background-color:lightgray;
 }
-
 
 
 /* Icon 1 */
@@ -165,10 +168,59 @@ li {
     font-family: "Roboto"
 }
  
- 
 .home-paragraph {
     background-color: lightgrey;
 }
+
+.paragraph-quote-one {
+    font-family: "roboto slab";
+    font-style: italic;
+    font-size: 3vw;
+    margin-left: 3vw;
+    padding-top: 2vw;
+}
+
+.paragraph-quote-two {
+    font-family: "roboto";
+    font-size: 2vw;
+    font-style: italic;
+    padding-top: 2vw;
+    margin-left: 1vw;
+}
+
+.paragraph-quote-three {
+    font-family: "roboto";
+    font-size: 1.5vw;
+    font-style: italic;
+    padding-top: 2vw;
+    margin-left: 8vw;
+}
+
+.paragraph-quote-four {
+    font-family: "roboto slab";
+    font-size: 2vw;
+    font-style: italic;
+    padding-top: 2vw;
+    margin-left: 12vw;
+}
+
+.paragraph-quote-five {
+    font-family: "roboto slab";
+    font-size: 2.6vw;
+    font-style: italic;
+    padding-top: 2vw;
+    margin-left: 3vw;
+}
+
+.paragraph-quote-six {
+    font-family: "roboto";
+    font-style: italic;
+    font-size: 1.6vw;
+    margin-left: 12vw;
+    padding-top: 3vw;
+
+}
+
 
 /* JUMBOTRON */
 
@@ -204,7 +256,6 @@ a.a-lg:hover {
 
 }
 
-
 /* ABOUT PAGE!! 
     ABOUT PAGE!!!
     ABOUT PAGE!!! */
@@ -223,7 +274,6 @@ a.a-lg:hover {
     margin-bottom: 5vw;
     margin-left: 12.5vw;
     font-size: 5vw;
-
 }
 
 #h4About {
@@ -303,6 +353,8 @@ a.a-lg:hover {
     display: inline-block;
     font-family: "roboto slab";
     font-size: 1.1rem;
+    margin-top: 22vw;
+    margin-left: 9vw;
    
 }
 
@@ -432,6 +484,32 @@ avisited {
 
     }
 
+    /* HOME */
+
+    .paragraph-quote-one {
+        display: none
+    }
+
+    .paragraph-quote-two {
+        display: none
+    }
+
+    .paragraph-quote-three {
+        display: none
+    }
+
+    .paragraph-quote-four {
+        display: none
+    }
+
+    .paragraph-quote-five {
+        display: none
+    }
+
+    .paragraph-quote-six {
+        display: none
+    }
+
 
     /* ABOUT */
 
@@ -488,6 +566,31 @@ avisited {
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* HOME */
+
+
+    .paragraph-quote-one {
+        display: none
+    }
+
+    .paragraph-quote-two {
+        display: none
+    }
+
+    .paragraph-quote-three {
+        display: none
+    }
+
+    .paragraph-quote-four {
+        display: none
+    }
+
+    .paragraph-quote-five {
+        display: none
+    }
+
+    .paragraph-quote-six {
+        display: none
+    }
 
     nav.navbar-lg {
         display: none;
@@ -660,6 +763,11 @@ avisited {
         margin-right: 15vw;
     }
 
+    .media-list-laptop {
+        display: none;
+    
+    }
+
      /* FOOTER */
 
      .subscribe-btn-sm {
@@ -745,7 +853,7 @@ avisited {
     .img-lightbulb {
         width: 20%;
         padding-top: 5vw !important;
-        margin-left: 33vw;
+        margin-left: 35vw;
     }
 
     .lightbulb-container {
@@ -754,7 +862,7 @@ avisited {
 
     #h3About {
         font-size: 4vw;
-        margin-left:23vw;
+        margin-left:25vw;
         display: block;
         font-family: "roboto";
         font-weight: 800;
@@ -913,7 +1021,6 @@ avisited {
     }
   
 
- 
 }
 
 
