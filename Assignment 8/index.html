@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
    
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css">
 
-      <!-- MY CSS -->
-      <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poor+Story" rel="stylesheet">
 
-      <!-- GOOGLE FONTS -->
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poor+Story" rel="stylesheet">
-    
 </head>
 <body>
-        
+        <!-- NAVBAR -->
             <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
                 <h5 class="my-0 mr-md-auto font-weight-normal font-family header-size">Reisig & Taylor</h5>
                 <nav class="my-2 my-md-0 mr-md-3">
@@ -34,10 +33,13 @@
 
               <div class="container">
                 <div class="row">
+
+                  <!-- CAROUSEL -->
                   
                   <div class="col-lg-6 left-col">
-                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                          <ol class="carousel-indicators">
+                     
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -63,6 +65,8 @@
                           </a>
                         </div> 
                       </div>
+
+                      <!-- PRODUCT DESCRIPTION -->
 
                       <div class="col-lg-6 right-col">
                           <h2 class="font-family">Our Best Fit Yet.</h2>
@@ -99,7 +103,8 @@
               <script>
                  
                   $(document).ready( function(){
-          
+
+            
                       var blueSizes = ["","XS", "S", "L", "XL"];
                       var greenSizes = ["","XS", "S", "M", "XL"];
                       var redSizes = ["","XS", "M", "XL"];
@@ -142,6 +147,8 @@
                           updateSizes();
                       });       
                   } );
+
+    
               
               </script>
 
