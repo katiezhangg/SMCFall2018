@@ -1,0 +1,31 @@
+#carouselExampleIndicators {
+    width: 80%;
+}
+
+.right-col {
+    display: inline-block;
+}
+
+.left-col {
+    display: inline-block;
+}
+
+.form-control {
+    width: 15%;
+}
+
+.font-family {
+    font-family: "poor story";
+}
+
+.font-size {
+    font-size: 2vw;
+}
+
+.header-size {
+    font-size: 3vw;
+}
+
+.font-paragraph {
+    font-family: "playfair display";
+}
