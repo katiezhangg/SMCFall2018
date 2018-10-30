@@ -8,13 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <!-- fancybox -->
-
-    <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+   
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -40,6 +34,7 @@
 
               <div class="container">
                 <div class="row">
+                  
                   <div class="col-lg-6 left-col">
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                           <ol class="carousel-indicators">
@@ -66,9 +61,9 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
-                        </div>
+                        </div> 
                       </div>
-                      
+
                       <div class="col-lg-6 right-col">
                           <h2 class="font-family">Our Best Fit Yet.</h2>
                           <p class="font-paragraph">The Ultimate Shwag Hoodie is this seasons hottest trend. Man's not hot? Get a hoodie. With duo lined fleece and dri-fit technology, this sweatshirt is sure to be your favorite.</p>
@@ -89,7 +84,7 @@
                                   </select>
                               </fieldset>
 
-                              <a class="fancybox" rel="group" href="img/size-chart.jpg"><p class="font-paragraph">Size Chart</p></a>
+                              <a rel="group" href="img/size-chart.jpg"><p class="font-paragraph">Size Chart</p></a>
                       
                               <fieldset class="pt-2">
                                   <input type="submit" value="Add to Cart">
@@ -105,38 +100,38 @@
                  
                   $(document).ready( function(){
           
-                      var blueModels = ["","XS", "S", "L", "XL"];
-                      var greenModels = ["","XS", "S", "M", "XL"];
-                      var redModels = ["","XS", "M", "XL"];
+                      var blueSizes = ["","XS", "S", "L", "XL"];
+                      var greenSizes = ["","XS", "S", "M", "XL"];
+                      var redSizes = ["","XS", "M", "XL"];
               
                       
-                      var updateModel = function(){
+                      var updateSizes = function(){
                           console.log($("#color").val());
           
                           $('#size').removeAttr('disabled');
                           $('#size').html('');
           
                           if($('#color').val() === "blue"){
-                              for(var i = 0; i < blueModels.length; i++){
-                                console.log(blueModels[i]);
-                                var htmlContent = '<option value="' + blueModels[i] + '">' + blueModels[i] + "</option>";
+                              for(var i = 0; i < blueSizes.length; i++){
+                                console.log(blueSizes[i]);
+                                var htmlContent = '<option value="' + blueSizes[i] + '">' + blueSizes[i] + "</option>";
                                 $("#size").append(htmlContent);
                               }
                           }
           
           
                           if($('#color').val() === "green"){
-                              for(var i = 0; i < greenModels.length; i++){
-                                console.log(greenModels[i]);
-                                var htmlContent = '<option value="' + greenModels[i] + '">' + greenModels[i] + "</option>";
+                              for(var i = 0; i < greenSizes.length; i++){
+                                console.log(greenSizes[i]);
+                                var htmlContent = '<option value="' + greenSizes[i] + '">' + greenSizes[i] + "</option>";
                                 $("#size").append(htmlContent);
                               }
                           }
           
                           if($('#color').val() === "red"){
-                              for(var i = 0; i < redModels.length; i++){
-                                console.log(redModels[i]);
-                                var htmlContent = '<option value="' + redModels[i] + '">' + redModels[i] + "</option>";
+                              for(var i = 0; i < redSizes.length; i++){
+                                console.log(redSizes[i]);
+                                var htmlContent = '<option value="' + redSizes[i] + '">' + redSizes[i] + "</option>";
                                 $("#size").append(htmlContent);
                               }
                           }
@@ -144,7 +139,7 @@
                       }
                      
                       $('#color').change(function(){
-                          updateModel();
+                          updateSizes();
                       });       
                   } );
               
