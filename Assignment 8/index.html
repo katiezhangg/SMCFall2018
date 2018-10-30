@@ -68,14 +68,15 @@
                           </a>
                         </div>
                       </div>
+                      
                       <div class="col-lg-6 right-col">
                           <h2 class="font-family">Our Best Fit Yet.</h2>
                           <p class="font-paragraph">The Ultimate Shwag Hoodie is this seasons hottest trend. Man's not hot? Get a hoodie. With duo lined fleece and dri-fit technology, this sweatshirt is sure to be your favorite.</p>
                           
                           <form action="auto-select.php">
                               <fieldset>
-                              <label for="make" class="font-paragraph">Color</label>
-                                  <select id="make" class="form-control" name="make">
+                              <label for="color" class="font-paragraph">Color</label>
+                                  <select id="color" class="form-control" name="color">
                                       <option value="blue">Blue</option>
                                       <option value="green">Green</option>
                                       <option value="red">Red</option>
@@ -83,9 +84,8 @@
                               </fieldset>    
                              
                               <fieldset class="pt-2">
-                                  <label for="model" class="font-paragraph">Size</label>
-                                  <select id="model" class="form-control" name="model" disabled>
-                      
+                                  <label for="size" class="font-paragraph">Size</label>
+                                  <select id="size" class="form-control" name="size" disabled>
                                   </select>
                               </fieldset>
 
@@ -105,50 +105,49 @@
                  
                   $(document).ready( function(){
           
-                      var blueModels = ["XS", "S", "L", "XL"];
-                      var greenModels = ["XS", "S", "M", "XL"];
-                      var redModels = ["XS", "M", "XL"];
+                      var blueModels = ["","XS", "S", "L", "XL"];
+                      var greenModels = ["","XS", "S", "M", "XL"];
+                      var redModels = ["","XS", "M", "XL"];
               
                       
                       var updateModel = function(){
-                          console.log($("#make").val());
+                          console.log($("#color").val());
           
-                          $('#model').removeAttr('disabled');
-                          $('#model').html('');
+                          $('#size').removeAttr('disabled');
+                          $('#size').html('');
           
-                          if($('#make').val() === "blue"){
+                          if($('#color').val() === "blue"){
                               for(var i = 0; i < blueModels.length; i++){
                                 console.log(blueModels[i]);
                                 var htmlContent = '<option value="' + blueModels[i] + '">' + blueModels[i] + "</option>";
-                                $("#model").append(htmlContent);
+                                $("#size").append(htmlContent);
                               }
                           }
           
           
-                          if($('#make').val() === "green"){
+                          if($('#color').val() === "green"){
                               for(var i = 0; i < greenModels.length; i++){
                                 console.log(greenModels[i]);
                                 var htmlContent = '<option value="' + greenModels[i] + '">' + greenModels[i] + "</option>";
-                                $("#model").append(htmlContent);
+                                $("#size").append(htmlContent);
                               }
                           }
           
-                          if($('#make').val() === "red"){
+                          if($('#color').val() === "red"){
                               for(var i = 0; i < redModels.length; i++){
                                 console.log(redModels[i]);
                                 var htmlContent = '<option value="' + redModels[i] + '">' + redModels[i] + "</option>";
-                                $("#model").append(htmlContent);
+                                $("#size").append(htmlContent);
                               }
                           }
           
-          
                       }
                      
-                      $('#make').change(function(){
+                      $('#color').change(function(){
                           updateModel();
-                      });
-                      
+                      });       
                   } );
+              
               </script>
 
     
