@@ -1,3 +1,14 @@
+/* HOME PAGE */
+
+body {
+    background-color:rgba(255, 234, 234, 0.726);
+
+}
+
+.checkout-nav {
+    color: lightblue;
+}
+
 #carouselIndicators {
     width: 80%;
 }
@@ -11,7 +22,7 @@
 }
 
 .form-control {
-    width: 15%;
+    width: 18%;
 }
 
 .font-family {
@@ -29,3 +40,90 @@
 .font-paragraph {
     font-family: "playfair display";
 }
+
+/* CHECKOUT STUFF */
+
+.form-group-checkout {
+    display: inline-block;
+    padding-right: 3%;
+}
+
+.form-control-checkout {
+    width: 100%;
+}
+
+label {
+    font-family: "playfair display";
+}
+
+.form-control-dropdown {
+    width: 80%;
+}
+
+.form-control-address {
+    width: 100%;
+}
+
+.form-group-checkout-2 {
+    width: 30%;
+    display: inline-block;
+
+}
+
+.form-group-checkout-3 {
+    width: 59%;
+    display: inline-block;
+}
+
+.form-group-checkout-4 {
+    width: 20%;
+    display: inline-block;
+    padding-right: 2%;
+}
+
+.form-group-checkout-5 {
+    display: inline-block;
+    width: 90%;
+}
+
+#buttonBilling {
+    background-color:lightblue;
+    color: white;
+    font-family: "playfair display";
+    border: none;
+    margin-top: 2%;
+ 
+}
+
+#h2Shipping {
+    font-family: "poor story";
+}
+
+/* SIDEBAR */
+
+.my-order {
+    width: 50%;
+    height: 43%;
+    background-image: url(img/hoodie-blue.jpg);
+    background-size: contain;
+    margin-top: 5%;
+    margin-left: 2%;
+    display: inline-block;
+
+}
+
+.item-description {
+    display: inline-block;
+    font-family: "playfair display";
+    font-size: 1rem;
+    margin-left: 2%;
+    padding-top: 10%;
+}
+
+.item-price {
+    font-family: "playfair display";
+    font-size: 1rem;
+    margin-left: 2%;
+}
+
+

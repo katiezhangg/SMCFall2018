@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!-- MY CSS -->
+      <link rel="stylesheet" href="style.css">
+
+      <!-- GOOGLE FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poor+Story" rel="stylesheet">
+    <title>My Cart</title>
+  </head>
+  <body>
+     <!-- NAVBAR -->
+     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal font-family header-size">Reisig & Taylor</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark font-family font-size" href="index.html">Shop</a>
+          <a class="p-2 text-dark font-family font-size" href="#">About</a>
+          <a class="p-2 text-dark font-family font-size" href="#">Contact</a>
+        </nav>
+        <a class="btn font-family font-size checkout-nav" href="checkout.html">Checkout</a>
+      </div>
+
+      <div class="container pt-3">
+          <div class="row">
+              <div class="col-8 form-fill">
+                  <h2 id="h2Shipping" class="mb-4">SHIPPING</h2>
+                <form>
+                    <div class="form-group form-group-checkout">
+                        <label for="form-control-input" class="form-label">First Name</label>
+                        <input type="firstname" class="form-control form-control-checkout" id="FormControlInput1">
+                    </div>
+                    <div class="form-group form-group-checkout">
+                        <label for="form-control-input" class="form-label">Last Name</label>
+                        <input type="lastname" class="form-control form-control-checkout" id="FormControlInput2">
+                    </div>
+                    <div class="form-group form-group-checkout-2">
+                        <label for="form-control-input" class="form-label">Company (Optional)</label>
+                        <input type="company" class="form-control form-control-checkout" id="FormControlInput3">
+                    </div>
+                    <div class="form-group form-group-checkout-2">
+                        <label for="exampleFormControlSelect1">Country</label>
+                        <select class="form-control form-control-dropdown" id="exampleFormControlSelect1">
+                          <option></option>
+                          <option>United Kingdom</option>
+                          <option>United States</option>
+                          <option>Uruguay</option>
+                          <option>U.S Virgin Islands</option>
+                          <option>Uzbekistan</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-checkout-3">
+                          <label for="form-control-input" class="form-label">Street Address</label>
+                          <input type="address" class="form-control form-control-address" id="FormControlInput4">
+                    </div>
+                    <div class="form-group form-group-checkout-4">
+                            <label for="form-control-input" class="form-label">Address Cont.</label>
+                            <input type="address2" class="form-control form-control-checkout" id="FormControlInput5">
+                    </div>
+                    <div class="form-group form-group-checkout-4">
+                            <label for="form-control-input" class="form-label">City</label>
+                            <input type="city" class="form-control form-control-checkout" id="FormControlInput6">
+                    </div>
+                    <div class="form-group form-group-checkout-4">
+                            <label for="form-control-input" class="form-label">State</label>
+                            <input type="address2" class="form-control form-control-checkout" id="FormControlInput7">
+                    </div>
+                    <div class="form-group form-group-checkout-4">
+                            <label for="form-control-input" class="form-label">Zip Code</label>
+                            <input type="address2" class="form-control form-control-checkout" id="FormControlInput8">
+                    </div>
+                    <div class="form-group-checkout-5">
+                         <label for="form-control-input" class="form-label">Email Address</label>
+                         <input type="email" class="form-control form-control-checkout" id="FormControlInput9">
+                    </div>
+                    <div class="pt-3">
+                         <input type="checkbox" name="is-subscribed" id="subscription" value="1">
+                         <label for="subscription">Sign up for Email Updates</label>
+                    </div>
+                    <div class="button">
+                         <input type="submit" id="next" value="NEXT" disabled="disabled" class="mt-2"/>
+                    </div>
+                </form>
+              </div>
+              <div class="col my-cart" style="border:solid 1.5px lightgrey">
+                <div class="row my-order"></div>
+                <p class="item-description">Super Schwag Hoodie: Blue <br> Size: M</p>
+                <p class="item-price">Subtotal: $54.95</p>
+                <hr>
+                <p class="item-price">Total: $54.95</p>
+              </div>
+          </div>
+      </div>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+
+    
+    $(document).ready( function() {
+        $('form > input').keyup(function() {
+    
+            var empty = false;
+            $('form > input').each(function() {
+                if ($(this).val() == '') {
+                    empty = true;
+                }
+            });
+    
+            if (empty) {
+                $('#next').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            } else {
+                $('#next').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+            }
+        });
+    })()
+
+    </script>
+
+</body>
+
+</html>
