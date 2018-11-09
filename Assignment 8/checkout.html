@@ -34,11 +34,11 @@
                 <form>
                     <div class="form-group form-group-checkout">
                         <label for="form-control-input" class="form-label">First Name</label>
-                        <input type="firstname" class="form-control form-control-checkout" id="FormControlInput1">
+                        <input type="firstname" class="form-control form-control-checkout form-required" id="FormControlInput1">
                     </div>
                     <div class="form-group form-group-checkout">
                         <label for="form-control-input" class="form-label">Last Name</label>
-                        <input type="lastname" class="form-control form-control-checkout" id="FormControlInput2">
+                        <input type="lastname" class="form-control form-control-checkout form-required" id="FormControlInput2">
                     </div>
                     <div class="form-group form-group-checkout-2">
                         <label for="form-control-input" class="form-label">Company (Optional)</label>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="form-group form-group-checkout-2">
                         <label for="exampleFormControlSelect1">Country</label>
-                        <select class="form-control form-control-dropdown" id="exampleFormControlSelect1">
+                        <select class="form-control form-control-dropdown form-required" id="exampleFormControlSelect1">
                           <option></option>
                           <option>United Kingdom</option>
                           <option>United States</option>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-group form-group-checkout-3">
                           <label for="form-control-input" class="form-label">Street Address</label>
-                          <input type="address" class="form-control form-control-address" id="FormControlInput4">
+                          <input type="address" class="form-control form-control-address form-required" id="FormControlInput4">
                     </div>
                     <div class="form-group form-group-checkout-4">
                             <label for="form-control-input" class="form-label">Address Cont.</label>
@@ -65,26 +65,26 @@
                     </div>
                     <div class="form-group form-group-checkout-4">
                             <label for="form-control-input" class="form-label">City</label>
-                            <input type="city" class="form-control form-control-checkout" id="FormControlInput6">
+                            <input type="city" class="form-control form-control-checkout form-required" id="FormControlInput6">
                     </div>
                     <div class="form-group form-group-checkout-4">
                             <label for="form-control-input" class="form-label">State</label>
-                            <input type="address2" class="form-control form-control-checkout" id="FormControlInput7">
+                            <input type="address2" class="form-control form-control-checkout form-required" id="FormControlInput7">
                     </div>
                     <div class="form-group form-group-checkout-4">
                             <label for="form-control-input" class="form-label">Zip Code</label>
-                            <input type="address2" class="form-control form-control-checkout" id="FormControlInput8">
+                            <input type="address2" class="form-control form-control-checkout form-required" id="FormControlInput8">
                     </div>
                     <div class="form-group-checkout-5">
                          <label for="form-control-input" class="form-label">Email Address</label>
-                         <input type="email" class="form-control form-control-checkout" id="FormControlInput9">
+                         <input type="email" class="form-control form-control-checkout form-required" id="FormControlInput9">
                     </div>
                     <div class="pt-3">
                          <input type="checkbox" name="is-subscribed" id="subscription" value="1">
                          <label for="subscription">Sign up for Email Updates</label>
                     </div>
                     <div class="button">
-                         <input type="submit" id="next" value="NEXT" disabled="disabled" class="mt-2"/>
+                         <input type="submit" id="next" value="NEXT" class="mt-2"/>
                     </div>
                 </form>
               </div>
@@ -107,25 +107,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
 
-    
-    $(document).ready( function() {
-        $('form > input').keyup(function() {
-    
-            var empty = false;
-            $('form > input').each(function() {
-                if ($(this).val() == '') {
-                    empty = true;
-                }
-            });
-    
-            if (empty) {
-                $('#next').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-            } else {
-                $('#next').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-            }
-        });
-    })()
+        $(document).ready( function(){
+            console.log("Ready");
+            $('.form-required').on('blur', function(){
+                console.log("Fired!");
 
+                if($('input').val() === ''){
+                    $('input').after('<p>Required Field</p>');
+                }
+            })
+        })
+    
+        
     </script>
 
 </body>
