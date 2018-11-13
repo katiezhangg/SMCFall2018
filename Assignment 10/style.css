@@ -1,0 +1,88 @@
+
+.text-align {
+    text-align: center;
+}
+.col-4 {
+    height: 100vw;
+    align-content: center;
+}
+
+h1 {
+    padding-top: 60%;
+}
+
+.animate-big {
+    animation: big 5s infinite;
+}
+
+.animate-blue {
+    animation: blue 5s infinite;
+}
+
+.animate-border {
+    animation: border 5s infinite;
+}
+
+.hover-cat:hover {
+    background-image: url(img/cat.jpg)
+}
+
+.hover-cat-text:hover {
+    transform: scale(2);
+}
+
+.hover-text-blue:hover {
+    transform: rotate(70deg);
+}
+
+@keyframes big {
+    0% {
+        font-size: 3vw;
+    }
+
+    25% {
+        font-size: 4vw;
+    }
+
+    50% {
+        font-size: 5vw;
+    }
+
+    75% {
+        font-size: 6vw;
+    }
+
+    100% {
+        font-size: 7vw;
+    }
+
+}
+
+@keyframes border {
+    0% {
+        border: 5px solid blue;
+    }
+
+    50% {
+        border: 5px dotted blue;
+    }
+
+    100% {
+        border: 5px solid blue;
+    }
+
+
+
+}
+
+@keyframes blue {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+
