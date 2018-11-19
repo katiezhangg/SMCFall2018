@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Assignment 11</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+    
+        #canvasHirst {
+            margin-left: 60px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <canvas id="canvasMondrian" width="520" height="520" style="border: 1px solid black">
+    </canvas>
+
+    <canvas id="canvasHirst" width="500" height="520" style="border: 1px solid black">
+
+    </canvas>
+
+    <script>
+
+        // Mondrian
+
+        var canvas = document.getElementById('canvasMondrian');
+
+        var ctx = canvas.getContext('2d');
+        
+        ctx.fillStyle = '#c50200';
+        ctx.fillRect(0, 0, 200, 200);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(200, 0, 10, 520);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 200, 520, 10);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(0, 310, 520, 10);
+
+        ctx.fillStyle = '#fbd101';
+        ctx.fillRect(0, 320, 60, 200);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(60, 320, 10, 200);
+
+        ctx.fillStyle = '#01014b';
+        ctx.fillRect(210, 320, 180, 150);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(390, 320, 10, 200);
+
+        ctx.fillStyle = 'black';
+        ctx.fillRect(200, 470, 200, 10);
+
+        // Hirst 
+        
+        var canvas = document.getElementById("canvasHirst");
+        
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+        
+        ctx.fillStyle = "#0069c5";
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+
+        
+    
+    </script>
+
+
+
+</body>
+</html>
