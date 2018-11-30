@@ -1,0 +1,20 @@
+.parent {
+    display: flex;
+    background-color: hotpink;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: inherit;
+}
+
+.child {
+    background-color: purple;
+    color: white;
+    flex-grow: 1;
+    border: 1px solid green;
+    flex-basis: 93rem;
+    align-self: end;
+
+}

@@ -71,30 +71,27 @@
         var canvas = document.getElementById("canvasHirst");
         
         var ctx = canvas.getContext("2d");
-        
-        ctx.fillStyle = "#0069c5";
-        ctx.beginPath();
-        ctx.arc(45, 45, 40, 0, 2 * Math.PI);
-        ctx.fill();
+
+        var circleRadius = 100;
 
         ctx.fillStyle = "#0069c5";
         ctx.beginPath();
-        ctx.arc(45, 45, 40, 0, 2 * Math.PI);
+        ctx.arc(circleRadius + 5, circleRadius + 5, circleRadius, 0, 2 * Math.PI);
         ctx.fill();
 
         ctx.fillStyle = "#eac0da";
         ctx.beginPath();
-        ctx.arc(455, 45, 40, 0, 2 * Math.PI);
+        ctx.arc(canvas.width - 5 - circleRadius, circleRadius + 5, circleRadius, 0, 2 * Math.PI);
         ctx.fill();
 
         ctx.fillStyle = "#d9d361";
         ctx.beginPath();
-        ctx.arc(45, 475, 40, 0, 2 * Math.PI);
+        ctx.arc(circleRadius + 5, canvas.height - 5 - circleRadius, circleRadius, 0, 2 * Math.PI);
         ctx.fill();
 
         ctx.fillStyle = "#ca2a2b";
         ctx.beginPath();
-        ctx.arc(455, 475, 40, 0, 2 * Math.PI);
+        ctx.arc(canvas.width - 5 - circleRadius, canvas.height - 5 - circleRadius, circleRadius, 0, 2 * Math.PI);
         ctx.fill();
 
     

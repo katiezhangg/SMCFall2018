@@ -1,0 +1,143 @@
+@font-face {
+    font-family: bhive;
+    src: url(font/Beehive-Regular.otf);
+}
+
+
+.logo-container {
+    padding-right: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.logo{
+    font-family: 'bhive';
+    font-size: 2rem;
+}
+
+.logo-center {
+    text-align: center;
+}
+
+.logo-div {
+    display: inline-block;
+}
+
+.form-inline {
+    position: relative;
+}
+
+.btn-search {
+    position: absolute;
+    right: 0px;
+    width: 10%;
+    height: 100%;
+    background-image: url(img/search-vector.png);
+    background-size: cover;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+}
+  
+
+/* NAVBAR */
+
+.navbar-light .navbar-toggler {
+    border: none;
+
+}
+a.nav-link {
+    font-family: "Roboto slab";
+}
+
+li {
+    background-color:lightgray;
+}
+
+
+/* Icon 1 */
+
+.animated-icon1, .animated-icon3, .animated-icon4 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .animated-icon1 span, .animated-icon3 span, .animated-icon4 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  .animated-icon1 span {
+      background: lightblue;
+  }
+  
+  .animated-icon3 span {
+      background: lightblue;
+  }
+  
+  .animated-icon4 span {
+      background: lightblue;
+  }
+  
+  .animated-icon1 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .animated-icon1 span:nth-child(2) {
+    top: 10px;
+  }
+  
+  .animated-icon1 span:nth-child(3) {
+    top: 20px;
+  }
+  
+  .animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  .animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+
