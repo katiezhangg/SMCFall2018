@@ -11,53 +11,514 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <title>Book Bandy</title>
   
 </head>
   <body>
-    <div class="container-fluid logo-container">
-        <div class="row">
-            <div class="col-sm-12 logo-center">
-             
-            <!-- Collapse button from https://mdbootstrap.com/components/bootstrap-hamburger-menu/ -->
-            <button id="collapseBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20"
-             aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon1"><span></span><span></span><span></span></div></button>
-            
-             <!-- Collapsible content -->
-             <div class="collapse navbar-collapse" id="navbarSupportedContent20">
 
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="team.html">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                </li>
-            </ul>
-            <!-- Links -->
-    
-        </div>
-        <!-- Collapsible content -->
-               
-                <div class="logo-div">
-                    <a class="logo">BOOK BANDY</a>
+    <!-- NAVBAR AND LOGO -->
+        <div id="topBar" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <i class="fas fa-bars fa-2x nav-toggle"></i>
+                    <nav class="main-navigation">
+                      <span class="nav-toggle"><i class="fas fa-2x fa-times"></i></span>
+                        <ul>
+                            <li class="navbar-li"><a href="#" class="link-nav">Log In</a></li>
+                            <li class="navbar-li"><a href="#" class="link-nav">All Categories</a></li>
+                            <li class="navbar-li"><a href="#" class="link-nav">Blog</a></li>
+                            <li class="navbar-li"><a href="#" class="link-nav">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    
+                    <a href="index.html"><h1 id="logoHome" class="display-inline-block pl-2 pt-2">
+                        BOOK BANDY
+                    </h1>
+                    </a>
+                        
                 </div>
-                <div class="search-div px-3">
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" size="90">
-                            <button class="btn-search" type="submit"></button>
-                        </form>
-                </div>     
             </div>
         </div>
-    </div>
+        <div class="container-fluid">
+            <div class="row text-align">
+                <div id="searchBar" class="col-sm-12 display-inline-block">
+                    <input id="searchInput" type="search" placeholder="search">
+                    <span class="fa fa-search fa-sm"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+    
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+    
+          <!--First slide-->
+          <div class="carousel-item active">
+            <div class="view carousel-slide-one">
+              
+             <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+    
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4 pt-2 carousel-h1">
+                    <strong>The number one resource for buying and selling used books</strong>
+                  </h1>
+    
+                  <p>
+                    <strong>Sign up to receive updates on our newest and best releases</strong>
+                  </p>
+    
+                  <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Sign up today!
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+          </div>
+          <!--/First slide-->
+    
+          <!--Second slide-->
+          <div class="carousel-item">
+            <div class="view carousel-slide-two">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+    
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4 pt-2 carousel-h1">
+                    <strong>The number one resource for buying and selling used books</strong>
+                  </h1>
+    
+                  <p>
+                    <strong>Sign up to receive updates on our newest and best releases</strong>
+                  </p>
+    
+    
+                  <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Sign up today!
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+          </div>
+          <!--/Second slide-->
+    
+          <!--Third slide-->
+          <div class="carousel-item">
+            <div class="view carousel-slide-three">
+    
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+    
+                <!-- Content -->
+                <div class="text-center white-text mx-5 wow fadeIn">
+                  <h1 class="mb-4 pt-2 carousel-h1">
+                    <strong>The number one resource for buying and selling used books</strong>
+                  </h1>
+    
+                  <p>
+                    <strong>Sign up to receive updates on our newest and best releases</strong>
+                  </p>
+    
+                  <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Sign up today!
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
+                </div>
+                <!-- Content -->
+    
+              </div>
+              <!-- Mask & flexbox options-->
+    
+            </div>
+          </div>
+          <!--/Third slide-->
+    
+        </div>
+        <!--/.Slides-->
+    
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    
+      </div>
+      <!--/.Carousel Wrapper-->
+
+
+    <!--Main layout-->
+    <main>
+        <div class="container mt-5">
+
+            <h2 class="text-align">This Month's Top Picks</h2>
+    
+          <!--Section: Products v.3-->
+          <section class="text-center mb-4">
+    
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="img/secret-life-of-bees.jpg" class="card-img-top mt-4" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    
+                    <!--Category & Title-->
+            
+                      <strong>
+                        <a href="" class="dark-grey-text title-text-splash">The Secret Life of Bees
+                        </a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="blue-text price-text-splash pt-1">
+                      Starting at $5.99
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="img/slaughterhouse-five.jpg" class="card-img-top mt-4" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                      <strong>
+                        <a href="" class="dark-grey-text title-text-splash">Slaughterhouse Five</a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="blue-text price-text-splash pt-1">
+                    Starting at $4.99
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Sport wear</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Grey blouse
+                          <span class="badge badge-pill primary-color">bestseller</span>
+                        </a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>99$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Fourth column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Outwear</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Black jacket</a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>219$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Fourth column-->
+    
+            </div>
+            <!--Grid row-->
+    
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Shirt</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Denim shirt
+                          <span class="badge badge-pill danger-color">NEW</span>
+                        </a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>120$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/14.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Sport wear</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Sweatshirt</a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>139$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Sport wear</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Grey blouse
+                          <span class="badge badge-pill primary-color">bestseller</span>
+                        </a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>99$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Grid column-->
+    
+              <!--Fourth column-->
+              <div class="col-lg-3 col-md-6 mb-4">
+    
+                <!--Card-->
+                <div class="card">
+    
+                  <!--Card image-->
+                  <div class="view overlay">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" alt="">
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+    
+                  <!--Card content-->
+                  <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Outwear</h5>
+                    </a>
+                    <h5>
+                      <strong>
+                        <a href="" class="dark-grey-text">Black jacket</a>
+                      </strong>
+                    </h5>
+    
+                    <h4 class="font-weight-bold blue-text">
+                      <strong>219$</strong>
+                    </h4>
+    
+                  </div>
+                  <!--Card content-->
+    
+                </div>
+                <!--Card-->
+    
+              </div>
+              <!--Fourth column-->
+    
+            </div>
+            <!--Grid row-->
+    
+          </section>
+          <!--Section: Products v.3-->
+    
+
+        </div>
+      </main>
+      <!--Main layout-->
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -65,25 +526,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
+  
+  document.ready;
+
+    $(function(){
+    $('.nav-toggle').on('click', function(){
+        $('.main-navigation').toggleClass('open');
+    })
     
-    // Works everywhere
-    $(document).ready(function () {
+})
 
-    // Hide/show animation hamburger function
-     $('.navbar-toggler').on('click', function () {
 
-    // Take this line to first hamburger animations
-    $('.animated-icon1').toggleClass('open');
-
-    // Take this line to second hamburger animation
-    $('.animated-icon3').toggleClass('open');
-
-    // Take this line to third hamburger animation
-    $('.animated-icon4').toggleClass('open');
-    
-    });
-
-});
 
     </script>
 
