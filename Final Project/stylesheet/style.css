@@ -1,6 +1,6 @@
 @font-face {
     font-family: bhive;
-    src: url(font/Beehive-Regular.otf);
+    src: url(../font/Beehive-Regular.otf);
 }
 
 main.text-align {
@@ -80,6 +80,14 @@ li {
     margin-top: 5%;
 }
 
+.fa-shopping-cart {
+    margin-left: 10%;
+}
+
+input#searchInput {
+    margin-left: 15%;
+}
+
 /* SPLASH PAGE */
 
 .splash-item-display-first-row {
@@ -105,19 +113,19 @@ li {
 }
 
 .carousel-slide-one {
-    background-image: url(img/four-reader.jpg);
+    background-image: url(../img/carousel-image-one.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .carousel-slide-two {
-    background-image: url(img/books-img.jpg);
+    background-image: url(../img/carousel-image-two.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .carousel-slide-one {
-    background-image: url(img/man-reading.jpg);
+    background-image: url(../img/carousel-image-three.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -125,3 +133,39 @@ li {
 .carousel-h1 {
     color: pink;
 }
+
+a.shopping-cart-link {
+    text-decoration: none;
+    color: black;
+}
+
+a.shopping-cart-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* PRODUCT PAGE */
+
+.product-page-img {
+    max-width: 80%;
+}
+
+.suggested-reads {
+    max-width: 60%;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control-product {
+    margin-left: 10%;
+}
+
+/* CHECKOUT PAGE */
+
+#smallSignUp {
+    color:black;
+}
+
+
+
