@@ -3,6 +3,11 @@
     src: url(../font/Beehive-Regular.otf);
 }
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 main.text-align {
     text-align: center;
 }
@@ -33,21 +38,164 @@ h1#logoHome {
 
 /* NAVBAR */
 
-a.link-nav {
+a.logo-link {
+    text-decoration: none;
+    color: pink;
+}
+
+a.logo-link:visited {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background: aliceblue;
+  }
+  
+  header .logo {
+    color: pink;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+    font-family: 'bhive';
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    position: relative;
+  }
+  
+  header nav ul li.sub-menu:before {
+    content: '\f078';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 55px;
+    color: grey;
+    right: 1px;
+  }
+  
+  header nav ul li.active.sub-menu:before {
+    content: '\f077';
+  }
+  
+  header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+    z-index: 1;
+  }
+  
+  header nav ul li.active ul {
+    /* use li: hover instead */
+    display: block;
+  }
+  
+  header nav ul li ul li {
+    display: block;
+    width: 200px;
+  }
+  
+  header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 5px;
     color: grey;
     text-decoration: none;
-    font-size: 1.5rem;
-}
+    display: block;
+  }
+  
+  header nav ul li a:hover {
+    color: pink;
+    text-decoration: none;
+
+  }
+  
+  header nav ul li a.active {
+    background: #2196f3;
+    text-decoration: none;
+  }
+  
+  .menu-toggle {
+    color: grey;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none
+  }
+  
+  @media (max-width: 860px) {
+    header {
+      padding: 0 20px;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    header nav {
+      /* use display none or left:-100% to hide the nav  */
+      /* display: none; */
+      position: absolute;
+      top: 50px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: aliceblue;
+      transition: 0.5s;
+      z-index: 1;
+    }
+
+    header nav.active {
+      left: 0;
+    }
+
+    header nav ul {
+      display: block;
+      text-align: center;
+    }
+
+    header nav ul li a {
+      border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+    }
+
+    header nav ul li.active ul {
+      position: relative;
+      background: lightgrey;
+    }
+
+    header nav ul li ul li {
+      width: 100%;
+    }
+  }
+
+  .li-dropdown {
+      padding: 5px;
+  }
+
+  .li-padding {
+      font-size: .8rem;
+  }
 
 
-ul {
-    list-style-type: none;
-    padding: 30px;
-}
-
-li {
-    padding: 10px;
-}
 
 .nav-toggle {
     cursor: pointer;
@@ -80,13 +228,13 @@ li {
     margin-top: 5%;
 }
 
-.fa-shopping-cart {
-    margin-left: 10%;
+/* SEARCH BAR */
+
+.search-container {
+    margin-top: 15%;
 }
 
-input#searchInput {
-    margin-left: 15%;
-}
+
 
 /* SPLASH PAGE */
 
@@ -167,5 +315,15 @@ a.shopping-cart-link:visited {
     color:black;
 }
 
+/* ALL CATEGORIES */
 
+.shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
 
+ .card-category {
+     height: 20vh;
+
+ }
