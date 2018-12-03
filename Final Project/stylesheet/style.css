@@ -57,7 +57,7 @@ header {
     background: aliceblue;
   }
   
-  header .logo {
+header .logo {
     color: pink;
     height: 50px;
     line-height: 50px;
@@ -67,22 +67,22 @@ header {
     font-family: 'bhive';
   }
   
-  header nav {
+header nav {
     float: right;
   }
   
-  header nav ul {
+header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  header nav ul li {
+header nav ul li {
     list-style: none;
     position: relative;
   }
   
-  header nav ul li.sub-menu:before {
+header nav ul li.sub-menu:before {
     content: '\f078';
     font-family: fontAwesome;
     position: absolute;
@@ -91,11 +91,11 @@ header {
     right: 1px;
   }
   
-  header nav ul li.active.sub-menu:before {
+header nav ul li.active.sub-menu:before {
     content: '\f077';
   }
   
-  header nav ul li ul {
+header nav ul li ul {
     position: absolute;
     left: 0;
     background: #333;
@@ -103,17 +103,17 @@ header {
     z-index: 1;
   }
   
-  header nav ul li.active ul {
+header nav ul li.active ul {
     /* use li: hover instead */
     display: block;
   }
   
-  header nav ul li ul li {
+header nav ul li ul li {
     display: block;
     width: 200px;
   }
   
-  header nav ul li a {
+header nav ul li a {
     height: 50px;
     line-height: 50px;
     padding: 5px;
@@ -122,18 +122,18 @@ header {
     display: block;
   }
   
-  header nav ul li a:hover {
+header nav ul li a:hover {
     color: pink;
     text-decoration: none;
 
   }
   
-  header nav ul li a.active {
+header nav ul li a.active {
     background: #2196f3;
     text-decoration: none;
   }
   
-  .menu-toggle {
+.menu-toggle {
     color: grey;
     float: right;
     line-height: 50px;
@@ -142,7 +142,7 @@ header {
     display: none
   }
   
-  @media (max-width: 860px) {
+    @media (max-width: 860px) {
     header {
       padding: 0 20px;
     }
@@ -327,3 +327,41 @@ a.shopping-cart-link:visited {
      height: 20vh;
 
  }
+
+ /* ARTS AND MUSIC */
+
+ #bestSellerScrollArts {
+     overflow-x: scroll;
+     width: auto;
+     white-space: nowrap;
+ }
+
+ .best-seller-item {
+     display: inline-block;
+     width: 150px;
+     height: 200px;
+ }
+
+ .item-one {
+     background-image: url(../img/believing-is-seeing.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .item-two {
+    background-image: url(../img/complete-guide-figure-drawing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.new-arrival-item {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+}
+
+/* BLOG */
+
+.container-blog {
+    margin-top: 20%;
+}

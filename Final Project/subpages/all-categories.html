@@ -29,18 +29,18 @@
                 <li><a href="#" class="li-padding px-4">Log In</a></li>
                 <li class="sub-menu"><a href="#" class="px-4 li-padding">All Categories</a>
                   <ul>
-                    <li class="li-dropdown"><a href="#" class="pb-1">Arts &  Music</a></li>
-                    <li class="li-dropdown"><a href="#">Biographies</a></li>
+                    <li class="li-dropdown"><a href="subpages/category-pages/arts-music.html" class="pb-1">Arts &  Music</a></li>
+                    <li class="li-dropdown"><a href="subpages/category-pages/biographies.html">Biographies</a></li>
                     <li class="li-dropdown"><a href="#">Business</a></li>
                     <li class="li-dropdown"><a href="#">Children's</a></li>
                     <li class="li-dropdown"><a href="#">History</a></li>
                     <li class="li-dropdown"><a href="#">Literature & Fiction</a></li>
-                    <li class="li-dropdown"><a href="subpages/all-catergories.html">See All Categories</a></li>
+                    <li class="li-dropdown"><a href="all-categories.html">See All Categories</a></li>
                   </ul>
                 </li>
                 <li><a href="#" class="li-padding px-4">Blog</a></li>
                 <li><a href="#" class="li-padding pl-4">Contact</a></li>
-                <li><a href="subpages/checkout.html" class="ml-3"><i class="fas fa-shopping-cart"></i>
+                <li><a href="checkout.html" class="ml-3"><i class="fas fa-shopping-cart"></i>
                 </a></li>
       
               </ul>
@@ -50,11 +50,36 @@
             </div>
           </header>
 
-          <main>
+    <main>
 
-          <div class="container mt-5">
+    <div class="container search-container">
+      <div class="row">    
+          <div class="col-xs-8 col-xs-offset-2">
+          <div class="input-group">
+                  <div class="input-group-btn search-panel">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Filter by</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#Title">Title</a></li>
+                        <li><a href="#Author">Author</a></li>
+                        <li><a href="#Genre">Genre</a></li>
+                        <li><a href="#Publisher">Publisher</a></li>
+                      </ul>
+                  </div>
+                  <input type="hidden" name="search_param" value="all" id="search_param">         
+                  <input type="text" class="form-control" name="x" placeholder="Search term...">
+                  <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"><i class="fas fa-search"></i></span></button>
+                  </span>
+              </div>
+          </div>
+      </div>
+    </div>
 
-                <h2 class="text-align py-5">All Categories</h2>
+    <div class="container mt-5">
+
+        <h2 class="text-align py-5">All Categories</h2>
         
 <!--Section: Products v.3-->
  <section class="text-center mb-4">
@@ -67,7 +92,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="subpages/product-page.html" class="dark-grey-text title-text-splash">Arts, Music & Photography
+                            <a href="category-pages/arts-music.html" class="dark-grey-text title-text-splash">Arts, Music & Photography
                             </a>
                           </strong>
                         </h5>
@@ -154,7 +179,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Fiction & Literature</a>
+                            <a href="" class="dark-grey-text title-text-splash">Horror</a>
                           </strong>
                         </h5>
                     </div>
@@ -169,7 +194,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Mystery</a>
+                            <a href="" class="dark-grey-text title-text-splash">Fiction & Literature</a>
                           </strong>
                         </h5>
                     </div>
@@ -183,7 +208,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Religion</a>
+                            <a href="" class="dark-grey-text title-text-splash">Mystery</a>
                           </strong>
                         </h5>
                     </div>
@@ -202,7 +227,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">History</a>
+                            <a href="" class="dark-grey-text title-text-splash">Religion</a>
                           </strong>
                         </h5>
                       </div>
@@ -210,7 +235,6 @@
                  </div>
         </div>
                 
-        
         <div class="col-lg-3 col-md-6 mb-4">
         
             <!--Card-->
@@ -218,7 +242,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Fiction & Literature</a>
+                            <a href="" class="dark-grey-text title-text-splash">Romance</a>
                           </strong>
                         </h5>
                     </div>
@@ -233,7 +257,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Mystery</a>
+                            <a href="" class="dark-grey-text title-text-splash">Sci-Fi & Fantasy</a>
                           </strong>
                         </h5>
                     </div>
@@ -247,7 +271,7 @@
                     <div class="card-body text-center card-body-height shadow">
                         <h5>
                           <strong>
-                            <a href="" class="dark-grey-text title-text-splash">Religion</a>
+                            <a href="" class="dark-grey-text title-text-splash">Self Help</a>
                           </strong>
                         </h5>
                     </div>
@@ -265,13 +289,38 @@
     </main>
 
           
-          
-
-   
+           
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+ 
+    <script>
+
+        $(document).ready(
+        function() {
+          $('.menu-toggle').click(function() {
+            $('nav').toggleClass('active')
+          })
+
+          $('ul li').click(function() {
+            $(this).siblings().removeClass('active');
+            $(this).toggleClass('active');
+          })
+        })
+
+        $(document).ready(function(e){
+          $('.search-panel .dropdown-menu').find('a').click(function(e) {
+          e.preventDefault();
+          var param = $(this).attr("href").replace("#","");
+          var concept = $(this).text();
+          $('.search-panel span#search_concept').text(concept);
+          $('.input-group #search_param').val(param);
+        });
+    });
+    
+    
+    </script>
+    </body>
 </html>
