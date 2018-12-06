@@ -1,0 +1,15 @@
+.display-center {
+    font-size: 3rem;
+}
+
+a.a-no-style {
+    text-decoration: none;
+}
+
+a.a-no-style:visited {
+    text-decoration: none;
+}
+
+.logo-type {
+    color: black;
+}
