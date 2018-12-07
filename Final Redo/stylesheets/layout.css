@@ -43,6 +43,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     background: steelblue;
+    z-index: 1;
   }
   
   header .logo {
