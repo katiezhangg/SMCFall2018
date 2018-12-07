@@ -7,6 +7,13 @@ body#bodySplash {
 
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
 
 .display-center {
     display: flex;
@@ -205,6 +212,7 @@ header {
   width: 35% !important;
 }
 
+
 /* ART PAGE */
 
 .hor-scroll {
@@ -250,10 +258,22 @@ header {
 
 /* CHECKOUT */
 
+#navCheckout {
+  z-index: 1 !important;
+}
+
 .sticky {
   position: sticky;
   top: 1rem;
 }
+
+/* FAQS */
+
+#faqs {
+  margin-top: 25%;
+
+}
+
 
 /* MEDIA BREAKPOINTS */
 

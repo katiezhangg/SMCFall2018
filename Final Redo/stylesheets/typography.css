@@ -6,7 +6,9 @@ a:visited {
     text-decoration: none;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 .display-center {
     font-size: 3rem;
