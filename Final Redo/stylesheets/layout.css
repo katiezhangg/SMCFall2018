@@ -16,11 +16,17 @@ body#bodySplash {
     line-height: 500px;
 }
 
+.website-creds {
+    font-family: 'Arimo', sans-serif;
+    font-size: .8rem;
+    color: white;
+    display: inline-block;
+    margin-top: 110px;
+    padding-left: 5px;
+} 
 
 /* NAVBAR STUFF */
  
-
-
 
 header {
     position: absolute;
@@ -29,7 +35,7 @@ header {
     padding: 0 100px;
     width: 100%;
     box-sizing: border-box;
-    background: teal;
+    background: steelblue;
   }
   
   header .logo {
@@ -93,15 +99,16 @@ header {
     color: #fff;
     text-decoration: none;
     display: block;
+    font-family: "Raleway", sans-serif;
   }
   
   header nav ul li a:hover {
     color: #fff;
-    background: #2196f3;
+    background: steelblue;
   }
   
   header nav ul li a.active {
-    background: #2196f3;
+    background: steelblue;
   }
   
   .menu-toggle {
@@ -143,7 +150,7 @@ header {
     }
     header nav ul li.active ul {
       position: relative;
-      background: #003e6f;
+      background: gray;
     }
     header nav ul li ul li {
       width: 100%;
@@ -178,6 +185,76 @@ header {
     border: transparent;
 }
 
+.card-img-top {
+  width: 30%;
+}
+
+.religion-card {
+  width: 20%;
+}
+
+.biography-card {
+  width: 25%;
+}
+
+.sci-fi-card {
+  width: 40% !important;
+}
+
+.history-card {
+  width: 35% !important;
+}
+
+/* ART PAGE */
+
+.hor-scroll {
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+}
+
+.book-slide {
+  width: 140px;
+  display: inline-block;
+}
+
+.our-fav-item-image {
+  display: inline-block;
+  width: 140px;
+  height: 200px;
+  overflow: hidden;
+
+}
+
+#ourFavoritesRow {
+  margin-top: 15%;
+}
+
+.book-slide img {
+  height: 200px;
+  width: 140px;
+  object-fit: cover;
+
+}
+
+.card-body {
+  padding-top: .5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-text {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* CHECKOUT */
+
+.sticky {
+  position: sticky;
+  top: 1rem;
+}
+
 /* MEDIA BREAKPOINTS */
 
 /* Mobile */
@@ -197,6 +274,15 @@ header {
 
 
 @media screen and (min-width: 992px) { 
+
+  .category-section {
+    margin-top: 10%;
+  }
+
+  #logIn {
+    margin-top: 10%;
+  
+  }
 
 
 }

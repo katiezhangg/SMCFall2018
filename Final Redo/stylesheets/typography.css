@@ -1,5 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+
 .display-center {
     font-size: 3rem;
+    font-family: "Domine", serif;
+    color: whitesmoke;
 }
 
 a.a-no-style {
@@ -11,5 +23,81 @@ a.a-no-style:visited {
 }
 
 .logo-type {
+    color: white;
+    font-family: "Domine", serif;
+}
+
+a.grey-text {
     color: black;
+    
+}
+
+.category-title {
+    font-family: "Raleway", sans-serif;
+
+}
+
+.log-in-h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+.log-in-type {
+    font-family: "Raleway", sans-serif;
+}
+
+.book-slide-title {
+    font-family: "Raleway", sans-serif;
+    color: black;
+    margin-top: 5px;
+    height: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.card-text-small {
+    font-size: .8rem;
+    padding-top: 0;
+}
+
+.product-type {
+    font-family: "Raleway", sans-serif;
+}
+
+.product-paragraph {
+    font-family: 'Arimo', sans-serif;
+}
+
+.checkout-type {
+    font-family: "Raleway", sans-serif;
+}
+
+.checkout-body-copy {
+    font-family: 'Arimo', sans-serif;
+}
+/* MEDIA BREAKPOINTS */
+
+/* Mobile */
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    .display-center {
+        font-size: 2rem;
+
+  
+    }
+
+}
+
+/* Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Laptop */
+
+
+@media screen and (min-width: 992px) { 
+
+
 }
