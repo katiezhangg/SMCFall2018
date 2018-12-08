@@ -31,14 +31,14 @@
                         <li><a href="log-in.html">Log In</a></li>
                         <li class="sub-menu"><a href="#">All Categories</a>
                             <ul>
-                                <li><a href="category-art.html">Art</a></li>
-                                <li><a href="">Fiction</a></li>
-                                <li><a href="">History</a></li>
-                                <li><a href="">Mystery</a></li>
-                                <li><a href="">Non Fiction</a></li>
-                                <li><a href="">Romance</a></li>
-                                <li><a href="">Religion</a></li>
-                                <li><a href="">Self Help</a></li>
+                                <li><a href="category-art.html" class="a-category">Art</a></li>
+                                <li><a href="" class="a-category">Fiction</a></li>
+                                <li><a href="" class="a-category">History</a></li>
+                                <li><a href="" class="a-category">Mystery</a></li>
+                                <li><a href="" class="a-category">Non Fiction</a></li>
+                                <li><a href="" class="a-category">Romance</a></li>
+                                <li><a href="" class="a-category">Religion</a></li>
+                                <li><a href="" class="a-category">Self Help</a></li>
                                 <li><a href="view-all.html">View All</a></li>
                             </ul>
                         </li>
@@ -66,40 +66,44 @@
             </div>
         </div>
 
-        <div class="container dark-grey-text mt-5">
-    
-    <!--Grid row-->
-          <div class="row wow fadeIn text-align">
-    
-    <!--Grid column-->
-            <div class="col-md-6 mb-4 display-inline-block px-5">
-              <img src="../img/believing-is-seeing.jpg" class="img-fluid product-page-img" alt="">
+        
+    <div class="container dark-grey-text mt-5">
+        <div class="row wow fadeIn text-align">
+            <div class="col-sm-12 col-lg-6 col-md-6 mb-4 display-inline-block pl-5">
+                <div id="carouselProduct" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-80" src="../img/believing-is-seeing.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-80" src="../img/believing-is-seeing-back.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="col-md-6 mb-4">
-    
-              <div class="p-4">
-    
-                <p class="lead product-type">
-                  <span class="mr-1">
-                    $3.99
-                  </span>
-                </p>
-    
-                <p class="lead font-weight-bold product-type">Description</p>
-    
-                <p class="product-paragraph">Believing Is Seeing is a work of multicultural scope and glittering intelligence that bridges the gulf between classical Japanese painting and the films of Spike Lee, between high theory and pop culture. Probing beyond the rhetorical surface of standard art histories and drawing on a panoramic array of illustrative material, Mary Anne Staniszewski throws a fresh light on individual works and the often mystifying criteria by which they are valued.</p>
-    
-                <form class="d-flex justify-content-left pt-2">
-                  <input type="text" class="form-control form-control-product" id="Count" style="width: 100px">
-                  <button class="btn btn-primary btn-md my-0" type="submit" id="addCart">Add to cart
-                    <i class="fa fa-shopping-cart ml-1"></i>
-                  </button>
-                </form>
-                <p class="pt-2 product-type"><small>Only 3 left in stock. Hurry!</small></p>
-              </div>
-            </div>
-        </div>
+
+            <div class="col-sm-12 col-lg-6 col-md-6 mb-4">
+                <div class="p-4">
+                  <p class="lead product-type">
+                    <span class="mr-1">
+                      $3.99
+                    </span>
+                  </p>
+                  <p class="lead font-weight-bold product-type">Description</p>
+      
+                  <p class="product-paragraph">Believing Is Seeing is a work of multicultural scope and glittering intelligence that bridges the gulf between classical Japanese painting and the films of Spike Lee, between high theory and pop culture. Probing beyond the rhetorical surface of standard art histories and drawing on a panoramic array of illustrative material, Mary Anne Staniszewski throws a fresh light on individual works and the often mystifying criteria by which they are valued.</p>
+      
+                  <form class="d-flex justify-content-left pt-2">
+                    <input type="text" class="form-control form-control-product" id="Count" style="width: 100px">
+                    <button class="btn btn-primary btn-md my-0" type="submit" id="addCart">Add to cart
+                      <i class="fa fa-shopping-cart ml-1"></i>
+                    </button>
+                  </form>
+                  <p class="pt-2 product-type"><small>Only 3 left in stock. Hurry!</small></p>
+                </div>
+            </div>      
+        </div> 
+    </div>
     
           <hr>
     
@@ -170,7 +174,6 @@
                     currentCount = 0;
                 }
 
-
                 if(count !== ""){
                     console.log(parseInt(currentCount));
                     console.log(parseInt(count));
@@ -178,7 +181,11 @@
                 }
             })
 
-        })
+            $('.carousel').carousel({
+                interval: 4000
+            })
+
+        });
     
     
     </script>

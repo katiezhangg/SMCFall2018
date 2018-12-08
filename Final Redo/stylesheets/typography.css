@@ -10,6 +10,11 @@ ul {
     list-style-type: none;
 }
 
+
+.a-category:hover {
+    text-decoration:  none;
+}
+
 .display-center {
     font-size: 3rem;
     font-family: "Domine", serif;
@@ -77,6 +82,32 @@ a.grey-text {
 .checkout-body-copy {
     font-family: 'Arimo', sans-serif;
 }
+
+#questionForm {
+    font-size: 1.2rem;
+}
+
+#faqs {
+    font-family: "Raleway", sans-serif;
+}
+
+.form-font {
+    font-family: 'Arimo', sans-serif;
+}
+
+a.link-faqs {
+    text-decoration: none;
+    color: black;
+}
+
+a.link-faqs:hover {
+    color:  steelblue;
+}
+
+#frequentlyAsked {
+    padding-inline-start: 40px;
+  }
+
 /* MEDIA BREAKPOINTS */
 
 /* Mobile */
