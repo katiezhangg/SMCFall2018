@@ -83,7 +83,7 @@
                         <textarea class="form-control" id="message" rows="3" placeholder="..."></textarea>
                         <p id="returnMessage"></p>
                     </div>
-                    <button id="helpSubmitBtn" type="button" class="btn btn-primary">Submit</button>
+                    <input id="submitBtn" type="submit" class="btn btn-primary" disabled="disabled">
                 </form>
 
             </div>
@@ -98,7 +98,7 @@
 
 
 
-     <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -106,26 +106,25 @@
     <script>
 
         $(document).ready(function(){
-            $('.menu-toggle').click(function(){
-                $('nav').toggleClass('active')
-            })
 
-            $('ul li').click(function(){
-                $(this).siblings().removeClass('active');
-                $(this).toggleClass('active');
-            })
-
-            $('#helpSubmitBtn').click(function(){
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var message = $('#message').val();
-
-                if (name == '' || email == '' || message == '') {
-                    alert("Please fill required fields");
-                } 
-
-                
-            })
+         
+            $('.form-control').blur(function(){
+                    var alertMessage = '<p class="alert m-0 text-danger">Required Field</p>';
+                    console.log('blurred element')
+                   
+                    $(this).parent().find('.alert').remove();
+                    
+                    
+                    if( $(this).val().length === 0 ) {
+                        console.log('not valid')
+                        
+                        $(this).parent().append(alertMessage);
+                        
+                    }
+                    if( $('#name' && '#email' && '#message').val().length > 0){
+                        $('#submitBtn').removeAttr('disabled');
+                    };
+                });
         })
     
     
