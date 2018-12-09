@@ -113,10 +113,12 @@ a.link-faqs:hover {
 /* Mobile */
 
 @media screen and (min-width: 320px) and (max-width: 766px) {
-    .display-center {
+    .display-4 {
         font-size: 2rem;
+    }
 
-  
+    .lead {
+        font-size: .8rem;
     }
 
 }
@@ -131,6 +133,7 @@ a.link-faqs:hover {
 
 
 @media screen and (min-width: 992px) { 
+
 
 
 }

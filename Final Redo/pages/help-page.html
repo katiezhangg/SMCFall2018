@@ -30,7 +30,7 @@
         <nav>
             <ul>
                 <li><a href="log-in.html">Log In</a></li>
-                <li class="sub-menu"><a href="view-all.html">All Categories</a>
+                <li class="sub-menu"><a href="#">All Categories</a>
                     <ul>
                         <li><a href="product-page.html" class="a-category">Art</a></li>
                         <li><a href="" class="a-category">Fiction</a></li>
@@ -106,6 +106,15 @@
     <script>
 
         $(document).ready(function(){
+
+             $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+
+            $('ul li').click(function(){
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            })
 
          
             $('.form-control').blur(function(){
