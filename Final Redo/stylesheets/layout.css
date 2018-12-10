@@ -7,6 +7,11 @@ body#bodySplash {
 
 }
 
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
 .jumbotron {
   background-color: transparent;
 }
@@ -22,7 +27,7 @@ body#bodySplash {
 .display-center {
     justify-content: center;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 12%;
 
 }
 
@@ -33,6 +38,34 @@ body#bodySplash {
     display: inline-block;
     padding-left: 5px;
 } 
+
+/* ANIMATION */
+
+alert {
+  border-radius: 0px;
+}
+
+.alert-danger {
+  background: darkred;
+  border: none;
+}
+
+.btn-primary {
+  border: none;
+}
+
+.slide-in{
+  animation: slideIn .75s ease;
+}
+
+@keyframes slideIn{
+  from{
+      transform: translateY(-50px);
+  }
+  to{
+      transform: translateY(0px);
+  }
+}
 
 /* NAVBAR STUFF */
  
@@ -188,14 +221,14 @@ header {
 /* ALL CATEGORIES */
 
 .category-section {
-    margin-top: 40%;
+    margin-top: 35%;
 }
 
 .card {
     border: transparent;
 }
 
-.card-img-top {
+.card-view-all {
   width: 30%;
 }
 
@@ -213,6 +246,11 @@ header {
 
 .history-card {
   width: 35% !important;
+}
+
+#allCategories {
+  margin-top: 5%;
+  font-family: "Raleway", sans-serif;
 }
 
 
@@ -241,7 +279,7 @@ header {
 }
 
 #ourFavoritesRow {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .book-slide img {
@@ -296,6 +334,13 @@ header {
 
 }
 
+img.d-block {
+  width: 70%;
+
+}
+
+
+
 
 /* FAQS */
 
@@ -315,6 +360,45 @@ header {
 #ulFaqs {
   text-align: left;
 }
+
+/* BLOG PAGE */
+
+#blogPosts {
+  margin-top: 10%;
+  
+}
+
+.siddhartha-img-blog {
+  max-width: 20%;
+  display: inline-block;
+}
+
+.more-posts-img {
+  max-width: 10%;
+}
+
+
+.media:hover {
+  -webkit-box-shadow: 0 10px 14px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 10px 14px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 10px 14px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.card-img-siddharta {
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+#siddharthaCardMobile {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img-top-blog {
+  width: 50%;
+}
+
 
 
 /* MEDIA BREAKPOINTS */
@@ -336,8 +420,27 @@ header {
   }
 
   .display-center {
-    margin-top: 65%;
+    margin-top: 40%;
   }
+
+  .more-posts-img {
+    max-width: 30%;
+  }
+
+  #mediaSiddharthaLaptop {
+    display: none;
+  }
+
+  #blogPosts {
+    margin-top: 20%;
+  }
+
+
+#allCategories {
+  margin-top: 10%;
+ 
+}
+
 
   
 }
@@ -351,6 +454,11 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #mediaSiddharthaLaptop {
+    display: none;
+  }
+
 
 }
 
@@ -414,4 +522,11 @@ header {
 
   }
 
+  #siddharthaCardMobile {
+    display: none;
+  }
+
+  #ourFavoritesRow {
+    margin-top: 5%;
+  }
 }

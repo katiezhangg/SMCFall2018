@@ -108,6 +108,50 @@ a.link-faqs:hover {
     padding-inline-start: 40px;
   }
 
+#blogPosts {
+    font-family: "Raleway", sans-serif;
+}
+
+#morePosts {
+    font-family: 'Arimo', sans-serif;
+
+}
+
+#featuredArticle {
+    font-family: 'Arimo', sans-serif;
+
+}
+
+.featured-article {
+    font-family: 'Arimo', sans-serif;
+    text-align: justify;
+    font-size: .8rem;
+}
+
+.media-body-text {
+    font-family: 'Arimo', sans-serif;
+}
+
+.more-posts-text {
+    font-family: 'Arimo', sans-serif;
+    font-size: .8rem;
+}
+
+.card-text {
+    font-family: 'Arimo', sans-serif;
+}
+
+.category-text {
+    font-family: 'Arimo', sans-serif;
+}
+
+.category-text-heading {
+    font-family: "Raleway", sans-serif;
+    
+}
+
+
+
 /* MEDIA BREAKPOINTS */
 
 /* Mobile */

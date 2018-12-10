@@ -32,7 +32,7 @@
                             <ul>
                                 <li><a href="category-art.html" class="a-category">Art</a></li>
                                 <li><a href="category-fiction.html" class="a-category">Fiction</a></li>
-                                <li><a href="" class="a-category">History</a></li>
+                                <li><a href="category-history.html" class="a-category">History</a></li>
                                 <li><a href="" class="a-category">Mystery</a></li>
                                 <li><a href="" class="a-category">Non Fiction</a></li>
                                 <li><a href="" class="a-category">Romance</a></li>
@@ -41,7 +41,7 @@
                                 <li><a href="view-all.html" class="a-category">View All</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="blog-page.html">Blog</a></li>
                         <li><a href="help-page.html">Help</a></li>
                         <li><a href="checkout-page.html"><i class="fas fa-shopping-cart"></i></a></li>
                     </ul>
@@ -51,19 +51,33 @@
             </div>
         </header>
 
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-12 mt-5">
+                            <div class="alert alert-danger alert-dismissable fade show text-light text-center drop-down" role="alert">
+                                Spend $15 or more for free shipping!<br>Ends Dec 31 | Use Code SHIP15
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         <div class="container">
             <div class="row">
                 <div id="ourFavoritesRow" class="col-sm-12 col-md-12 col-lg-12">
-                    <h2 class="py-2">Fiction</h2>
-                    <h4 class="arts-heading">Our Favorites</h4>
+                    <h2 class="py-2 category-text-heading">Fiction</h2>
+                    <h4 class="arts-heading category-text">Our Favorites</h4>
                     <div id="ourFavoritesScrollArt" class="hor-scroll pt-2">
-                        <a href="product-page.html" class="product-link">
+                        <a href="product-page-fiction.html" class="product-link">
                         <div class="book-slide mr-3">
                             <div class="card card-template">
                                 <img class="card-img-top" src="../img/slaughterhouse-five.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Slaughterhouse Five</p>
-                                <p class="card-text card-text-small">Kurt<br>Vonnegut</p>
+                                <p class="card-text card-text-small">Kurt Vonnegut</p>
                                 <p class="card-text card-text-small">$3.99</p>
                             </div>
                         </div>
@@ -74,8 +88,8 @@
                                     <img class="card-img-top" src="../img/the-hobbit.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="card-text">The Hobbit</p>
-                                    <p class="card-text card-text-small">J.R.R<br>Tolkien</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text card-text-small">J.R.R Tolkien</p>
+                                    <p class="card-text card-text-small">$2.99</p>
                                 </div>
                             </div>
                         </div>
@@ -84,8 +98,8 @@
                                     <img class="card-img-top" src="../img/siddhartha.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="card-text">Siddhartha</p>
-                                    <p class="card-text card-text-small">Hermann<br>Hesse</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text card-text-small">Hermann Hesse</p>
+                                    <p class="card-text card-text-small">$1.99</p>
                                 </div>
                             </div>
                         </div>
@@ -94,8 +108,8 @@
                                     <img class="card-img-top" src="../img/harry-potter-sorcerers-stone.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <p class="card-text">Harry Potter and<br>the Sorcerer's Stone</p>
-                                    <p class="card-text card-text-small">J.K<br>Rowling</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text card-text-small">J.K Rowling</p>
+                                    <p class="card-text card-text-small">$2.99</p>
                                 </div>
                             </div>
                         </div>
@@ -103,9 +117,9 @@
                             <div class="card card-template">
                                     <img class="card-img-top" src="../img/nine-stories.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Believing Is Seeing</p>
-                                    <p class="card-text card-text-small">J.D<br>Salinger</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text">Nine Stories</p>
+                                    <p class="card-text card-text-small">J.D Salinger</p>
+                                    <p class="card-text card-text-small">$1.99</p>
                                 </div>
                             </div>
                         </div>
@@ -113,55 +127,55 @@
                 </div>
                 
                 <div id="recentlyAddedRow" class="col-sm-12 col-md-12 col-lg-12">
-                    <h4 class="arts-heading">Recently Added</h4>
+                    <h4 class="arts-heading category-text">Recently Added</h4>
                     <div id="ourFavoritesScrollArt" class="hor-scroll pt-2">
                         <div class="book-slide mr-3">
                             <div class="card card-template">
-                                <img class="card-img-top" src="../img/believing-is-seeing.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="../img/ready-player-one.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="card-text">Believing Is Seeing</p>
-                                <p class="card-text card-text-small">Mary Anne<br>Staniszewski</p>
-                                <p class="card-text card-text-small">$3.99</p>
+                                <p class="card-text">Ready Player One</p>
+                                <p class="card-text card-text-small">Ernest Cline</p>
+                                <p class="card-text card-text-small">$1.99</p>
                             </div>
                         </div>
                         </div>
                         <div class="book-slide mr-3">
                             <div class="card card-template">
-                                    <img class="card-img-top" src="../img/believing-is-seeing.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/all-the-light-we-cannot-see.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Believing Is Seeing</p>
-                                    <p class="card-text card-text-small">Mary Anne<br>Staniszewski</p>
+                                    <p class="card-text">All the Light We<br>Cannot See</p>
+                                    <p class="card-text card-text-small">Anthony Doerr</p>
                                     <p class="card-text card-text-small">$3.99</p>
                                 </div>
                             </div>
                         </div>
                         <div class="book-slide mr-3">
                             <div class="card card-template">
-                                    <img class="card-img-top" src="../img/believing-is-seeing.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/the-glass-castle.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Believing Is Seeing</p>
-                                    <p class="card-text card-text-small">Mary Anne<br>Staniszewski</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text">The Glass Castle</p>
+                                    <p class="card-text card-text-small">Jeanette Walls</p>
+                                    <p class="card-text card-text-small">$2.99</p>
                                 </div>
                             </div>
                         </div>
                         <div class="book-slide mr-3">
                             <div class="card card-template">
-                                    <img class="card-img-top" src="../img/believing-is-seeing.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/secret-life-of-bees.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Believing Is Seeing</p>
-                                    <p class="card-text card-text-small">Mary Anne<br>Staniszewski</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text">The Secret Life of Bees</p>
+                                    <p class="card-text card-text-small">Sue Monk Kidd</p>
+                                    <p class="card-text card-text-small">$1.99</p>
                                 </div>
                             </div>
                         </div>
                         <div class="book-slide">
                             <div class="card card-template">
-                                    <img class="card-img-top" src="../img/believing-is-seeing.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/the-color-purple-1.jpg" alt="Card image cap">
                                 <div class="card-body">
-                                    <p class="card-text">Believing Is Seeing</p>
-                                    <p class="card-text card-text-small">Mary Anne<br>Staniszewski</p>
-                                    <p class="card-text card-text-small">$3.99</p>
+                                    <p class="card-text">The Color Purple</p>
+                                    <p class="card-text card-text-small">Alice Walker</p>
+                                    <p class="card-text card-text-small">$2.99</p>
                                 </div>
                             </div>
                         </div>
