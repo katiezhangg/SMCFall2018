@@ -233,7 +233,7 @@ header {
 }
 
 .religion-card {
-  width: 20% !important;;
+  width: 15% !important;;
 }
 
 .biography-card {
@@ -246,6 +246,27 @@ header {
 
 .history-card {
   width: 35% !important;
+}
+
+.mystery-card {
+  width: 25% !important;
+}
+
+.music-card {
+  width: 25% !important;
+}
+
+.non-fiction-card {
+  width: 25% !important;
+}
+
+.romance-card {
+  width: 25% !important;
+}
+
+
+.music-card {
+  width: 25% !important;
 }
 
 #allCategories {
@@ -338,7 +359,6 @@ img.d-block {
   width: 70%;
 
 }
-
 
 
 
