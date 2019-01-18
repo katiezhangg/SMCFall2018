@@ -15,9 +15,14 @@ ul {
     text-decoration:  none;
 }
 
+.popUpText {
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+}
 .display-center {
     font-size: 3rem;
-    font-family: "Domine", serif;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
     color: whitesmoke;
 }
 
@@ -31,7 +36,8 @@ a.a-no-style:visited {
 
 .logo-type {
     color: white;
-    font-family: "Domine", serif;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
 }
 
 a.grey-text {
@@ -40,20 +46,24 @@ a.grey-text {
 }
 
 .category-title {
-    font-family: "Raleway", sans-serif;
-
+    font-family: 'Cormorant', serif;
 }
 
 .log-in-h3 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Cormorant', serif;
 }
 
 .log-in-type {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Muli';
+}
+
+.btn-font {
+    font-family: 'Muli';
+
 }
 
 .book-slide-title {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Cormorant', serif;
     color: black;
     margin-top: 5px;
     height: 36px;
@@ -68,7 +78,7 @@ a.grey-text {
 }
 
 .product-type {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Cormorant', serif;
 }
 
 .product-paragraph {
@@ -109,16 +119,16 @@ a.link-faqs:hover {
   }
 
 #blogPosts {
-    font-family: "Raleway", sans-serif;
+    font-family: "Cormorant", serif;
 }
 
 #morePosts {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Muli', sans-serif;
 
 }
 
 #featuredArticle {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Muli', sans-serif;
 
 }
 
@@ -142,12 +152,34 @@ a.link-faqs:hover {
 }
 
 .category-text {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Muli';
 }
 
 .category-text-heading {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Cormorant';
     
+}
+
+.footer-nav-text {
+    font-family: "Muli";
+    color: black;
+    font-size: 1rem;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-category-text {
+    font-family: "Muli";
+    color: black;
+    font-size: 1rem;
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+.footer-h5 {
+    font-family: 'Muli';
+    font-weight: 600;
 }
 
 
@@ -158,11 +190,11 @@ a.link-faqs:hover {
 
 @media screen and (min-width: 320px) and (max-width: 766px) {
     .display-4 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .lead {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
 }
