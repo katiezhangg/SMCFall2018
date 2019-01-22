@@ -426,10 +426,14 @@ img.d-block {
 
 .footer-background {
   background-color: #FAFAFA;
-  width: 500px;
-  height: 500px;
+  width: 50%;
+  height: 50%;
   z-index: 1;
   margin-top: 50%;
+}
+
+.footer-header {
+  margin-top: 2%;
 }
 
 .ul-footer {
