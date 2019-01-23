@@ -437,30 +437,12 @@ img.d-block {
 }
 
 .ul-footer {
-  padding-top: 10%;
-  margin-left: 5%;
-}
+ margin-top: 1rem;
+ margin-bottom: 1rem;
 
-#secondColumn {
-  padding: 0;
-  margin-top: 10%;
-  margin-left: 15%;
 }
 
 
-#thirdColumn {
-  padding: 0;
-  margin-top: 10%;
-}
-
-.button-footer {
-  margin-top: 6%;
-  float: right;
-  font-family: 'Muli';
-  border-radius: 5%;
-  background-color: steelblue;
-  color: white;
-}
 
 
 /* MEDIA BREAKPOINTS */
