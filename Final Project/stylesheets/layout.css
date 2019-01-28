@@ -422,25 +422,7 @@ img.d-block {
   width: 50%;
 }
 
-/* FOOTER */
 
-.footer-background {
-  background-color: #FAFAFA;
-  width: 50%;
-  height: 50%;
-  z-index: 1;
-  margin-top: 50%;
-}
-
-.footer-header {
-  margin-top: 2%;
-}
-
-.ul-footer {
- margin-top: 1rem;
- margin-bottom: 1rem;
-
-}
 
 
 

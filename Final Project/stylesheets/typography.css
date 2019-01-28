@@ -160,40 +160,6 @@ a.link-faqs:hover {
     
 } 
 
-.footer-nav-text {
-    font-family: "Muli";
-    color: black;
-    font-size: 1rem;
-    display: inline-block;
-    padding-bottom: 5px;
-    text-decoration: none;
-}
-
-.footer-category-text {
-    font-family: "Muli";
-    color: black;
-    font-size: 1rem;
-    display: inline-block;
-    padding-bottom: 5px;
-    
-}
-
-.footer-nav-text:hover {
-    color: steelblue;
-    text-decoration: none;
-}
-
-.footer-category-text:hover {
-    color: steelblue;
-    text-decoration: none;
-}
-
-.footer-h5 {
-    font-family: 'Muli';
-    font-weight: 600;
-}
-
-
 
 /* MEDIA BREAKPOINTS */
 
